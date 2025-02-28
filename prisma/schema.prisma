@@ -6,3 +6,147 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id                String    @id @default(cuid())
+  name              String?
+  email             String    @unique
+  username          String?
+  image             String?
+  totalXp           Int       @default(0)
+  streak            Int       @default(0)
+  lastActivity      DateTime?
+
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime @updatedAt
+
+  accounts          Account[]
+  lessonsProgress   UserLessonProgress[]
+  modulesProgress    UserModuleProgress[]
+
+  @@unique([id, email])
+}
+
+model Account {
+  id                 String      @id @default(cuid())
+  userId             String
+  provider           String
+  providerAccountId  String   @unique
+  refresh_token      String?  
+  access_token       String?
+  expires_at         Int?
+  user               User     @relation(fields: [userId], references: [id])
+
+  @@unique([id, providerAccountId])
+}
+
+model Trail {
+  id                  String @id @default(cuid())
+  slug                String
+  name                String
+  description         String?
+  tags                String
+
+  modules             Module[]
+
+  @@unique([id])
+}
+
+model Module {
+  id                  String @id @default(cuid())
+  name                String
+  description         String?
+  trailId             String
+
+  topics              Topic[]
+  modulesProgress     UserModuleProgress[]
+
+  trail               Trail @relation(fields: [trailId], references: [id])
+  @@unique([id])
+}
+
+model Topic {
+  id                  String @id @default(cuid())
+  slug                String
+  name                String
+  description         String?
+  moduleId            String
+
+  lessons             Lesson[]
+
+  module              Module  @relation(fields: [moduleId], references: [id])
+  @@unique([id, slug])
+}
+
+model Lesson {
+  id                  String @id @default(cuid())
+  name                String
+  topicId             String
+
+  questions           Question[]
+  usersProgress       UserLessonProgress[]
+
+  topic               Topic @relation(fields: [topicId], references: [id])
+  @@unique([id])
+}
+
+model Question {
+  id                  String @id @default(cuid())
+  text                String
+  type                QuestionType
+  xp                  Int
+  lessonId            String
+
+  correctAnswer       String? 
+
+  answers             Answer[] 
+
+  lesson              Lesson  @relation(fields: [lessonId], references: [id])  
+  @@unique([id])
+}
+
+model Answer {
+  id                  String @id @default(cuid())
+  text                String        
+  questionId          String
+
+  order               Int?           
+  pairId              Int?         
+
+  question            Question @relation(fields: [questionId], references: [id])
+  @@unique([id])
+}
+
+enum QuestionType {
+  MULTIPLE_CHOICE
+  MATCH_PAIRS
+  ORDER_CORRECTLY
+  IDENTIFY_ERROR
+  TRUE_FALSE
+  COMPLETE_THE_SENTENCE
+}
+
+model UserLessonProgress {
+  id                  String  @id @default(cuid())
+  userId              String
+  lessonId            String
+  completed           Boolean @default(false) 
+
+  user                User   @relation(fields: [userId], references: [id])
+  lesson              Lesson @relation(fields: [lessonId], references: [id])
+
+  @@unique([id, userId, lessonId]) 
+}
+
+model UserModuleProgress {
+  id        String  @id @default(cuid())
+  userId    String
+  moduleId  String
+  unlocked  Boolean @default(false) 
+  completed Boolean @default(false) 
+
+  user      User    @relation(fields: [userId], references: [id])
+  module    Module  @relation(fields: [moduleId], references: [id])
+
+  @@unique([id, userId, moduleId]) 
+}
