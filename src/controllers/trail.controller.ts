@@ -22,3 +22,18 @@ export const fetchTrail = async (
 
   responseHandler.success(res, "Trail retrieved successfully", trailResponse);
 };
+
+export const fetchTrailsProgressByUser = async (
+  req: Request,
+  res: Response
+): Promise<void | any> => {
+  const userId = req.headers["x-user-id"] as string;
+
+  const trailResponse = await trailService.getTrailsProgressByUser(userId);
+
+  responseHandler.success(
+    res,
+    "Completed trails retrieved successfully",
+    trailResponse
+  );
+};

@@ -28,6 +28,29 @@ const authService = {
           username,
         },
       });
+
+      const trails = await prisma.trail.findMany();
+
+      for (const index in trails) {
+        const firstModule = await prisma.module.findFirst({
+          where: {
+            trailId: trails[index].id,
+          },
+          select: {
+            id: true,
+          },
+        });
+
+        if (firstModule) {
+          await prisma.userModuleProgress.create({
+            data: {
+              userId: user.id,
+              unlocked: true,
+              moduleId: firstModule.id,
+            },
+          });
+        }
+      }
     }
 
     await prisma.account.upsert({

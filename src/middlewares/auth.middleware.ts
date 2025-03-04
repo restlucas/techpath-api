@@ -9,7 +9,7 @@ export const authMiddleware = (
   res: Response,
   next: NextFunction
 ) => {
-  const apiKey = req.headers["api_key"];
+  const apiKey = req.headers["api-key"];
 
   if (!apiKey) {
     res.status(401).json({ message: "API Key não fornecida" });

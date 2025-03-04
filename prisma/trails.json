@@ -79,32 +79,6 @@
                     ]
                   },
                   {
-                    "text": "Ordene as etapas para incluir um arquivo CSS em um documento HTML.",
-                    "type": "ORDER_CORRECTLY",
-                    "answers": [
-                      { "text": "Crie um arquivo CSS", "order": 1 },
-                      {
-                        "text": "Link o arquivo CSS no HTML usando a tag <link>",
-                        "order": 2
-                      },
-                      { "text": "Escreva as regras CSS", "order": 3 },
-                      { "text": "Exiba o HTML no navegador", "order": 4 }
-                    ]
-                  },
-                  {
-                    "text": "Ordene as etapas para adicionar um script JavaScript em um documento HTML.",
-                    "type": "ORDER_CORRECTLY",
-                    "answers": [
-                      { "text": "Crie um arquivo JavaScript", "order": 1 },
-                      {
-                        "text": "Link o arquivo JavaScript no HTML usando a tag <script>",
-                        "order": 2
-                      },
-                      { "text": "Escreva o código JavaScript", "order": 3 },
-                      { "text": "Execute o HTML no navegador", "order": 4 }
-                    ]
-                  },
-                  {
                     "text": "Qual opção abaixo apresenta erro?",
                     "type": "IDENTIFY_ERROR",
                     "correctAnswer": "<img src='image.jpg'>",
@@ -171,17 +145,6 @@
                     "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
                   },
                   {
-                    "text": "O CSS é usado para __________ o visual das páginas web.",
-                    "type": "COMPLETE_THE_SENTENCE",
-                    "correctAnswer": "estilizar",
-                    "answers": [
-                      { "text": "modificar" },
-                      { "text": "estilizar" },
-                      { "text": "manipular" },
-                      { "text": "configurar" }
-                    ]
-                  },
-                  {
                     "text": "O atributo 'alt' na tag <img> é usado para __________ a imagem caso ela não seja carregada.",
                     "type": "COMPLETE_THE_SENTENCE",
                     "correctAnswer": "descrever",
@@ -190,23 +153,6 @@
                       { "text": "descrever" },
                       { "text": "substituir" },
                       { "text": "remover" }
-                    ]
-                  },
-                  {
-                    "text": "Associe a propriedade CSS com sua função.",
-                    "type": "MATCH_PAIRS",
-                    "answers": [
-                      { "text": "color", "pairId": 1 },
-                      { "text": "Define a cor do texto", "pairId": 1 },
-                      { "text": "background-color", "pairId": 2 },
-                      { "text": "Define a cor de fundo", "pairId": 2 },
-                      { "text": "font-size", "pairId": 3 },
-                      { "text": "Define o tamanho da fonte", "pairId": 3 },
-                      { "text": "margin", "pairId": 4 },
-                      {
-                        "text": "Define a margem ao redor do elemento",
-                        "pairId": 4
-                      }
                     ]
                   }
                 ]
@@ -4885,6 +4831,3650 @@
                       {
                         "text": "Atualiza os dados existentes no servidor",
                         "pairId": 3
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "oteamento no Angular",
+                "questions": [
+                  {
+                    "text": "O roteamento no Angular permite que a aplicação altere o conteúdo da tela sem recarregar a página.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O que é necessário para configurar o roteamento no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Definir as rotas no arquivo de roteamento e importar RouterModule.",
+                    "answers": [
+                      {
+                        "text": "Definir as rotas no arquivo de roteamento e importar RouterModule."
+                      },
+                      {
+                        "text": "Criar componentes para cada página e definir a URL no HTML."
+                      },
+                      {
+                        "text": "Usar o componente <router-outlet> e definir rotas no arquivo de configuração."
+                      },
+                      {
+                        "text": "Importar RouterModule apenas, sem configurar as rotas."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Associe o comando à sua função no roteamento do Angular:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "RouterLink", "pairId": 1 },
+                      { "text": "Navegar para uma rota", "pairId": 1 },
+                      { "text": "ActivatedRoute", "pairId": 2 },
+                      { "text": "Capturar dados da rota ativa", "pairId": 2 },
+                      { "text": "RouterOutlet", "pairId": 3 },
+                      {
+                        "text": "Exibir o componente associado à rota",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código abaixo está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "this.router.navigate(['/home']);",
+                    "answers": [
+                      { "text": "this.router.navigate(['/home']);" },
+                      { "text": "this.router.navigateByUrl('/home');" },
+                      {
+                        "text": "this.router.navigate(['/home'], { replaceUrl: true });"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ordene as etapas para configurar o roteamento no Angular.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Defina as rotas no arquivo de configuração",
+                        "order": 1
+                      },
+                      {
+                        "text": "Importe RouterModule no módulo da aplicação",
+                        "order": 2
+                      },
+                      {
+                        "text": "Adicione o <router-outlet> no template HTML",
+                        "order": 3
+                      },
+                      {
+                        "text": "Use RouterLink nos elementos de navegação",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O componente <router-outlet> é usado para renderizar os componentes associados às rotas ativas.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Complete a frase: No Angular, para navegar entre as páginas, usamos o __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "RouterLink",
+                    "answers": [
+                      { "text": "RouterLink" },
+                      { "text": "RouterOutlet" },
+                      { "text": "ActivatedRoute" },
+                      { "text": "RouterModule" }
+                    ]
+                  },
+                  {
+                    "text": "Quais são os parâmetros que podem ser passados nas rotas no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Parâmetros de rota e parâmetros de consulta.",
+                    "answers": [
+                      {
+                        "text": "Parâmetros de rota e parâmetros de consulta."
+                      },
+                      { "text": "Somente parâmetros de rota." },
+                      { "text": "Somente parâmetros de consulta." },
+                      { "text": "Nenhum parâmetro pode ser passado nas rotas." }
+                    ]
+                  },
+                  {
+                    "text": "Qual a diferença entre 'navigate' e 'navigateByUrl' no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "navigate recebe um array de rotas, enquanto navigateByUrl recebe uma string de URL.",
+                    "answers": [
+                      {
+                        "text": "navigate recebe um array de rotas, enquanto navigateByUrl recebe uma string de URL."
+                      },
+                      {
+                        "text": "Ambos são usados da mesma forma, não há diferença."
+                      },
+                      {
+                        "text": "navigateByUrl permite navegar para rotas internas, enquanto navigate é usado para rotas externas."
+                      },
+                      {
+                        "text": "navigate só pode ser usado com parâmetros de rota, enquanto navigateByUrl não aceita parâmetros."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código abaixo navega para a rota 'about' no Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "this.router.navigate(['/about']);",
+                    "answers": [
+                      { "text": "this.router.navigate(['/about']);" },
+                      { "text": "this.router.navigateByUrl('/about');" },
+                      { "text": "this.navigate(['/about']);" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Testando Componentes e Serviços no Angular",
+                "questions": [
+                  {
+                    "text": "O Angular usa o Jasmine como framework de testes padrão.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual comando é usado para rodar os testes no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "ng test",
+                    "answers": [
+                      { "text": "ng test" },
+                      { "text": "ng serve --test" },
+                      { "text": "ng run test" },
+                      { "text": "ng spec" }
+                    ]
+                  },
+                  {
+                    "text": "Associe cada conceito de testes no Angular à sua descrição:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "TestBed", "pairId": 1 },
+                      {
+                        "text": "Cria um ambiente de testes para componentes e serviços",
+                        "pairId": 1
+                      },
+                      { "text": "SpyOn", "pairId": 2 },
+                      {
+                        "text": "Espiona chamadas de métodos em serviços e componentes",
+                        "pairId": 2
+                      },
+                      { "text": "Fixture", "pairId": 3 },
+                      {
+                        "text": "Referencia o componente renderizado para testes",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código abaixo está incorreto para testar um serviço no Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "const service = new MyService();",
+                    "answers": [
+                      { "text": "const service = new MyService();" },
+                      { "text": "const service = TestBed.inject(MyService);" },
+                      {
+                        "text": "let service: MyService = TestBed.inject(MyService);"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ordene os passos para testar um componente no Angular.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Configurar TestBed com o componente e dependências",
+                        "order": 1
+                      },
+                      {
+                        "text": "Criar a instância do fixture e acessar o componente",
+                        "order": 2
+                      },
+                      {
+                        "text": "Executar as asserções e verificar os resultados",
+                        "order": 3
+                      },
+                      {
+                        "text": "Rodar os testes e analisar os resultados",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O TestBed é usado para configurar e inicializar componentes e serviços nos testes.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Complete a frase: Para testar chamadas assíncronas em serviços Angular, usamos a função __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "fakeAsync",
+                    "answers": [
+                      { "text": "async" },
+                      { "text": "fakeAsync" },
+                      { "text": "waitForAsync" },
+                      { "text": "tick" }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas técnicas pode ser usada para testar a interação do usuário com um componente no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Disparar eventos como click e input usando fixture.nativeElement.",
+                    "answers": [
+                      {
+                        "text": "Disparar eventos como click e input usando fixture.nativeElement."
+                      },
+                      {
+                        "text": "Apenas checar o estado inicial do componente."
+                      },
+                      {
+                        "text": "Testar apenas os métodos internos do componente."
+                      },
+                      {
+                        "text": "Executar o serviço manualmente antes de rodar os testes."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O que o método detectChanges() faz nos testes de componentes no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Força a detecção de mudanças no componente testado.",
+                    "answers": [
+                      {
+                        "text": "Força a detecção de mudanças no componente testado."
+                      },
+                      {
+                        "text": "Reinicializa o TestBed para rodar os testes novamente."
+                      },
+                      {
+                        "text": "Executa um ciclo de vida completo do Angular dentro do teste."
+                      },
+                      {
+                        "text": "Verifica se um componente foi criado corretamente."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual das opções abaixo representa a forma correta de injetar um serviço em um teste no Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "const service = new MyService();",
+                    "answers": [
+                      { "text": "const service = TestBed.inject(MyService);" },
+                      {
+                        "text": "let service: MyService = TestBed.inject(MyService);"
+                      },
+                      { "text": "const service = new MyService();" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Formulários Reativos e Template Driven",
+                "questions": [
+                  {
+                    "text": "No Angular, formulários reativos são mais adequados para formulários complexos com lógica dinâmica.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual módulo do Angular é necessário para trabalhar com formulários reativos?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "ReactiveFormsModule",
+                    "answers": [
+                      { "text": "FormsModule" },
+                      { "text": "ReactiveFormsModule" },
+                      { "text": "HttpClientModule" },
+                      { "text": "NgModule" }
+                    ]
+                  },
+                  {
+                    "text": "Associe cada tipo de formulário no Angular à sua característica principal:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Formulários Template Driven", "pairId": 1 },
+                      {
+                        "text": "Baseados em diretivas e vinculação bidirecional",
+                        "pairId": 1
+                      },
+                      { "text": "Formulários Reativos", "pairId": 2 },
+                      {
+                        "text": "Gerenciados através do código TypeScript com FormControl e FormGroup",
+                        "pairId": 2
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código abaixo está incorreto ao definir um campo em um formulário reativo?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "this.form = new FormGroup({ name: new FormField('') });",
+                    "answers": [
+                      {
+                        "text": "this.form = new FormGroup({ name: new FormControl('') });"
+                      },
+                      {
+                        "text": "this.form = new FormGroup({ name: new FormField('') });"
+                      },
+                      { "text": "this.form = this.fb.group({ name: [''] });" }
+                    ]
+                  },
+                  {
+                    "text": "Ordene os passos para criar um formulário reativo no Angular.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Importar o ReactiveFormsModule no módulo do Angular",
+                        "order": 1
+                      },
+                      {
+                        "text": "Criar um FormGroup no componente",
+                        "order": 2
+                      },
+                      {
+                        "text": "Associar o formulário ao template HTML",
+                        "order": 3
+                      },
+                      {
+                        "text": "Gerenciar eventos e validações no TypeScript",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Para usar formulários baseados em template no Angular, devemos importar o FormsModule.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Complete a frase: No Angular, o decorador __________ é usado para criar um controle de formulário em um componente.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "FormControl",
+                    "answers": [
+                      { "text": "NgForm" },
+                      { "text": "FormControl" },
+                      { "text": "FormGroup" },
+                      { "text": "Validators" }
+                    ]
+                  },
+                  {
+                    "text": "Qual das opções abaixo é verdadeira sobre formulários template driven no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Eles utilizam diretivas como ngModel para vinculação bidirecional.",
+                    "answers": [
+                      {
+                        "text": "Eles utilizam diretivas como ngModel para vinculação bidirecional."
+                      },
+                      {
+                        "text": "São baseados na criação de FormGroup e FormControl."
+                      },
+                      {
+                        "text": "São mais indicados para formulários muito dinâmicos e complexos."
+                      },
+                      {
+                        "text": "São gerenciados exclusivamente pelo TypeScript."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O que acontece se um FormControl for declarado sem validators?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "O campo será válido por padrão.",
+                    "answers": [
+                      { "text": "O campo será inválido por padrão." },
+                      { "text": "O campo será válido por padrão." },
+                      {
+                        "text": "O Angular aplicará automaticamente validação de required."
+                      },
+                      { "text": "O formulário não poderá ser enviado." }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas diretivas é usada para criar um formulário baseado em template no Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "<input type='text' [formControl]='name'>",
+                    "answers": [
+                      { "text": "<input type='text' [(ngModel)]='name'>" },
+                      { "text": "<form #myForm='ngForm'>" },
+                      { "text": "<input type='text' [formControl]='name'>" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Estilização no Angular",
+                "questions": [
+                  {
+                    "text": "No Angular, podemos usar o atributo 'ngStyle' para aplicar estilos dinamicamente em um elemento.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual diretiva do Angular é utilizada para adicionar classes dinamicamente a um elemento?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "ngClass",
+                    "answers": [
+                      { "text": "ngStyle" },
+                      { "text": "ngClass" },
+                      { "text": "ngIf" },
+                      { "text": "ngBind" }
+                    ]
+                  },
+                  {
+                    "text": "Associe cada método de estilização no Angular com sua característica principal:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "CSS Externo", "pairId": 1 },
+                      {
+                        "text": "Estilos definidos em arquivos separados e importados no componente",
+                        "pairId": 1
+                      },
+                      { "text": "Inline Styles", "pairId": 2 },
+                      {
+                        "text": "Estilos aplicados diretamente no atributo style",
+                        "pairId": 2
+                      },
+                      { "text": "ngClass", "pairId": 3 },
+                      {
+                        "text": "Permite alternar classes CSS dinamicamente",
+                        "pairId": 3
+                      },
+                      { "text": "ngStyle", "pairId": 4 },
+                      {
+                        "text": "Permite definir estilos inline dinamicamente via objetos no TypeScript",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código abaixo está incorreto ao definir uma classe dinamicamente em um componente Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "<div [ngClass]=\"{'ativo': ativo = true}\"></div>",
+                    "answers": [
+                      { "text": "<div [ngClass]=\"{'ativo': ativo}\"></div>" },
+                      {
+                        "text": "<div [ngClass]=\"{'ativo': ativo = true}\"></div>"
+                      },
+                      {
+                        "text": "<div class=\"{{ ativo ? 'ativo' : '' }}\"></div>"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ordene os passos para adicionar estilos dinâmicos a um componente Angular.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Criar a lógica no TypeScript para definir o estilo ou classe",
+                        "order": 1
+                      },
+                      {
+                        "text": "Utilizar ngClass ou ngStyle no template do componente",
+                        "order": 2
+                      },
+                      {
+                        "text": "Testar a renderização para garantir que os estilos são aplicados corretamente",
+                        "order": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Complete a frase: No Angular, podemos definir estilos globais no arquivo __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "styles.scss",
+                    "answers": [
+                      { "text": "app.module.ts" },
+                      { "text": "styles.css" },
+                      { "text": "styles.scss" },
+                      { "text": "angular.json" }
+                    ]
+                  },
+                  {
+                    "text": "Qual das opções abaixo **não** é um método recomendado para estilizar componentes no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Modificar diretamente o DOM usando JavaScript puro",
+                    "answers": [
+                      {
+                        "text": "Usar ngClass para aplicar classes CSS dinamicamente"
+                      },
+                      {
+                        "text": "Usar ngStyle para definir estilos inline dinamicamente"
+                      },
+                      {
+                        "text": "Modificar diretamente o DOM usando JavaScript puro"
+                      },
+                      {
+                        "text": "Definir estilos dentro do arquivo .component.scss"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Quando utilizamos 'encapsulation: ViewEncapsulation.None' em um componente, o que acontece?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Os estilos do componente podem afetar outros componentes da aplicação.",
+                    "answers": [
+                      {
+                        "text": "Os estilos do componente podem afetar outros componentes da aplicação."
+                      },
+                      {
+                        "text": "Os estilos do componente ficam completamente isolados do restante da aplicação."
+                      },
+                      {
+                        "text": "O Angular impede o uso de estilos internos no componente."
+                      },
+                      {
+                        "text": "O CSS do componente se torna obrigatório para todos os outros componentes."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O que acontece se atribuirmos um objeto a ngStyle sem definir todas as propriedades CSS corretamente?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Somente as propriedades válidas serão aplicadas, o restante será ignorado.",
+                    "answers": [
+                      {
+                        "text": "O Angular lançará um erro e não aplicará nenhum estilo."
+                      },
+                      {
+                        "text": "Somente as propriedades válidas serão aplicadas, o restante será ignorado."
+                      },
+                      { "text": "O componente será renderizado sem estilos." },
+                      {
+                        "text": "O Angular removerá todos os estilos do elemento."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas abordagens **não** pode ser usada para estilizar um componente Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "<div style=\"color: {{ corTexto }}\"></div>",
+                    "answers": [
+                      { "text": "<div [style.color]=\"corTexto\"></div>" },
+                      { "text": "<div style=\"color: {{ corTexto }}\"></div>" },
+                      {
+                        "text": "<div [ngStyle]=\"{ 'color': corTexto }\"></div>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Consumo de APIs e HTTP Client no Angular",
+                "questions": [
+                  {
+                    "text": "No Angular, qual módulo devemos importar para fazer requisições HTTP?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "HttpClientModule",
+                    "answers": [
+                      { "text": "HttpModule" },
+                      { "text": "HttpClientModule" },
+                      { "text": "HttpService" },
+                      { "text": "ApiModule" }
+                    ]
+                  },
+                  {
+                    "text": "Associe cada método HTTP à sua funcionalidade correta:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "GET", "pairId": 1 },
+                      {
+                        "text": "Busca informações de um servidor",
+                        "pairId": 1
+                      },
+                      { "text": "POST", "pairId": 2 },
+                      { "text": "Envia dados para um servidor", "pairId": 2 },
+                      { "text": "PUT", "pairId": 3 },
+                      {
+                        "text": "Atualiza completamente um recurso",
+                        "pairId": 3
+                      },
+                      { "text": "DELETE", "pairId": 4 },
+                      { "text": "Remove um recurso do servidor", "pairId": 4 }
+                    ]
+                  },
+                  {
+                    "text": "Qual dos seguintes trechos de código está incorreto ao fazer uma requisição GET no Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "this.http.get('https://api.com/dados').subscribe(data => this.dados = data)",
+                    "answers": [
+                      {
+                        "text": "this.http.get('https://api.com/dados').subscribe(data => this.dados = data)"
+                      },
+                      {
+                        "text": "this.http.get<any>('https://api.com/dados').subscribe(response => console.log(response))"
+                      },
+                      {
+                        "text": "this.http.get('https://api.com/dados').toPromise().then(data => console.log(data))"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Complete a frase: Para interceptar e modificar requisições HTTP no Angular, utilizamos __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "HttpInterceptor",
+                    "answers": [
+                      { "text": "HttpClient" },
+                      { "text": "HttpInterceptor" },
+                      { "text": "HttpMiddleware" },
+                      { "text": "HttpRequestHandler" }
+                    ]
+                  },
+                  {
+                    "text": "Ordene corretamente os passos para realizar uma requisição GET no Angular.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Importar HttpClientModule no módulo da aplicação",
+                        "order": 1
+                      },
+                      {
+                        "text": "Injetar HttpClient no serviço ou componente",
+                        "order": 2
+                      },
+                      {
+                        "text": "Fazer a chamada GET usando o método http.get()",
+                        "order": 3
+                      },
+                      {
+                        "text": "Tratar a resposta dentro do subscribe()",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Para enviar dados ao servidor via POST no Angular, usamos qual método?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "http.post()",
+                    "answers": [
+                      { "text": "http.get()" },
+                      { "text": "http.post()" },
+                      { "text": "http.send()" },
+                      { "text": "http.request()" }
+                    ]
+                  },
+                  {
+                    "text": "O que acontece quando o servidor retorna um código de status HTTP 404?",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Ocorre um erro indicando que o recurso não foi encontrado.",
+                    "answers": [
+                      {
+                        "text": "Ocorre um erro indicando que o recurso não foi encontrado."
+                      },
+                      {
+                        "text": "A requisição é automaticamente reenviada pelo Angular."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual a maneira correta de lidar com erros em requisições HTTP no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Usando catchError() dentro do pipe()",
+                    "answers": [
+                      {
+                        "text": "Colocando um try-catch ao redor do subscribe()"
+                      },
+                      { "text": "Usando catchError() dentro do pipe()" },
+                      {
+                        "text": "Tratando o erro diretamente no console.log()"
+                      },
+                      {
+                        "text": "Não há necessidade de tratar erros, o Angular já lida com eles automaticamente."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual é a função principal de um HttpInterceptor no Angular?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Interceptar requisições e modificar headers, autenticação, etc.",
+                    "answers": [
+                      {
+                        "text": "Interceptar requisições e modificar headers, autenticação, etc."
+                      },
+                      { "text": "Criar novas requisições automaticamente." },
+                      { "text": "Substituir o HttpClientModule." },
+                      { "text": "Transformar todas as requisições em POST." }
+                    ]
+                  },
+                  {
+                    "text": "Qual das abordagens abaixo **não** é recomendada ao trabalhar com requisições HTTP no Angular?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "Realizar chamadas HTTP dentro de componentes sem usar serviços.",
+                    "answers": [
+                      {
+                        "text": "Utilizar um serviço para centralizar as chamadas HTTP."
+                      },
+                      {
+                        "text": "Implementar interceptors para modificar requisições quando necessário."
+                      },
+                      {
+                        "text": "Realizar chamadas HTTP dentro de componentes sem usar serviços."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Vue",
+            "slug": "vue",
+            "lessons": [
+              {
+                "name": "Introdução ao Vue e Vue CLI",
+                "questions": [
+                  {
+                    "text": "O que é o Vue.js?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Um framework progressivo para a construção de interfaces de usuário",
+                    "answers": [
+                      { "text": "Uma biblioteca para manipulação de DOM" },
+                      {
+                        "text": "Um framework progressivo para a construção de interfaces de usuário"
+                      },
+                      { "text": "Um banco de dados para aplicações front-end" },
+                      { "text": "Uma ferramenta para estilização avançada" }
+                    ]
+                  },
+                  {
+                    "text": "Associe os termos com suas respectivas descrições no contexto do Vue.js:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Vue CLI", "pairId": 1 },
+                      {
+                        "text": "Ferramenta de linha de comando para gerenciar projetos Vue",
+                        "pairId": 1
+                      },
+                      { "text": "Virtual DOM", "pairId": 2 },
+                      {
+                        "text": "Representação leve do DOM real utilizada pelo Vue",
+                        "pairId": 2
+                      },
+                      { "text": "Single File Components (SFC)", "pairId": 3 },
+                      {
+                        "text": "Arquivos .vue que combinam template, script e estilo",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual comando é utilizado para criar um novo projeto Vue com a Vue CLI?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "vue create nome-do-projeto",
+                    "answers": [
+                      { "text": "npm create vue@latest nome-do-projeto" },
+                      { "text": "vue create nome-do-projeto" },
+                      { "text": "vue new nome-do-projeto" },
+                      { "text": "vue init nome-do-projeto" }
+                    ]
+                  },
+                  {
+                    "text": "Complete a frase: O arquivo principal onde o Vue é instanciado em um projeto gerado pela Vue CLI geralmente é o __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "main.js",
+                    "answers": [
+                      { "text": "index.js" },
+                      { "text": "main.js" },
+                      { "text": "app.js" },
+                      { "text": "vue.config.js" }
+                    ]
+                  },
+                  {
+                    "text": "Ordene corretamente os passos para iniciar um projeto Vue com a Vue CLI.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Instalar a Vue CLI globalmente (caso necessário)",
+                        "order": 1
+                      },
+                      {
+                        "text": "Executar o comando vue create nome-do-projeto",
+                        "order": 2
+                      },
+                      {
+                        "text": "Escolher um template ou configurações personalizadas",
+                        "order": 3
+                      },
+                      {
+                        "text": "Acessar a pasta do projeto e rodar npm run serve",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A Vue CLI permite a criação de projetos Vue sem a necessidade de configurações manuais complexas.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual destas opções **não** é uma funcionalidade nativa do Vue.js?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Manipulação direta do DOM sem utilizar o Virtual DOM",
+                    "answers": [
+                      { "text": "Componentes reutilizáveis" },
+                      { "text": "Reatividade e Two-way Data Binding" },
+                      {
+                        "text": "Manipulação direta do DOM sem utilizar o Virtual DOM"
+                      },
+                      { "text": "Gerenciamento de estado via Vuex (opcional)" }
+                    ]
+                  },
+                  {
+                    "text": "Para rodar um projeto Vue criado com a Vue CLI localmente, qual comando deve ser utilizado?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "npm run serve",
+                    "answers": [
+                      { "text": "npm start" },
+                      { "text": "vue run serve" },
+                      { "text": "npm run serve" },
+                      { "text": "vue serve" }
+                    ]
+                  },
+                  {
+                    "text": "Qual das seguintes vantagens é um benefício direto do uso da Vue CLI?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Automação da configuração inicial do projeto",
+                    "answers": [
+                      {
+                        "text": "Automação da configuração inicial do projeto"
+                      },
+                      { "text": "Substituição do Vue Router e Vuex" },
+                      { "text": "Eliminação da necessidade de arquivos .vue" },
+                      { "text": "Remoção da necessidade de um servidor local" }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas afirmações sobre a Vue CLI está **incorreta**?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "A Vue CLI permite criar projetos Vue, mas não suporta a adição de plugins após a criação.",
+                    "answers": [
+                      {
+                        "text": "A Vue CLI permite criar projetos Vue rapidamente."
+                      },
+                      {
+                        "text": "A Vue CLI suporta a adição de plugins após a criação do projeto."
+                      },
+                      {
+                        "text": "A Vue CLI permite criar projetos Vue, mas não suporta a adição de plugins após a criação."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Componentes e Diretivas no Vue",
+                "questions": [
+                  {
+                    "text": "O que são componentes no Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Blocos reutilizáveis de código que encapsulam estrutura, lógica e estilo",
+                    "answers": [
+                      { "text": "Funções para manipulação de eventos" },
+                      {
+                        "text": "Blocos reutilizáveis de código que encapsulam estrutura, lógica e estilo"
+                      },
+                      { "text": "Elementos HTML com classes do Vue" },
+                      { "text": "Templates que só podem ser usados uma vez" }
+                    ]
+                  },
+                  {
+                    "text": "Associe as diretivas Vue com suas funcionalidades:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "v-if", "pairId": 1 },
+                      {
+                        "text": "Renderiza um elemento condicionalmente",
+                        "pairId": 1
+                      },
+                      { "text": "v-for", "pairId": 2 },
+                      { "text": "Itera sobre uma lista de itens", "pairId": 2 },
+                      { "text": "v-bind", "pairId": 3 },
+                      {
+                        "text": "Dinamicamente atribui valores a atributos",
+                        "pairId": 3
+                      },
+                      { "text": "v-model", "pairId": 4 },
+                      {
+                        "text": "Faz ligação bidirecional de dados em inputs",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual é a forma correta de declarar um componente global no Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Vue.component('nome-componente', { template: '<div>Olá</div>' })",
+                    "answers": [
+                      {
+                        "text": "Vue.register('nome-componente', { template: '<div>Olá</div>' })"
+                      },
+                      {
+                        "text": "Vue.create('nome-componente', { template: '<div>Olá</div>' })"
+                      },
+                      {
+                        "text": "Vue.component('nome-componente', { template: '<div>Olá</div>' })"
+                      },
+                      {
+                        "text": "new Vue({ component: 'nome-componente', template: '<div>Olá</div>' })"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Complete a frase: O diretório padrão para armazenar componentes em um projeto Vue criado com a Vue CLI é __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "src/components",
+                    "answers": [
+                      { "text": "src/components" },
+                      { "text": "src/views" },
+                      { "text": "public/components" },
+                      { "text": "assets/components" }
+                    ]
+                  },
+                  {
+                    "text": "Ordene corretamente os passos para criar e utilizar um componente Vue.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Criar um novo arquivo .vue dentro da pasta components",
+                        "order": 1
+                      },
+                      {
+                        "text": "Definir o template, script e style dentro do arquivo",
+                        "order": 2
+                      },
+                      {
+                        "text": "Importar o componente no arquivo onde será usado",
+                        "order": 3
+                      },
+                      {
+                        "text": "Registrar o componente no objeto de exportação",
+                        "order": 4
+                      },
+                      {
+                        "text": "Usar o componente dentro do template",
+                        "order": 5
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A diretiva v-if no Vue remove um elemento do DOM caso a condição seja falsa.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual dessas opções **não** é uma funcionalidade nativa dos componentes Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Alterar diretamente o estado de outro componente sem props ou eventos",
+                    "answers": [
+                      { "text": "Encapsular estrutura, lógica e estilo" },
+                      {
+                        "text": "Alterar diretamente o estado de outro componente sem props ou eventos"
+                      },
+                      {
+                        "text": "Emitir eventos para comunicação entre componentes"
+                      },
+                      {
+                        "text": "Utilizar slots para definir áreas customizáveis"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual diretiva Vue permite a manipulação de eventos de um elemento?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "v-on",
+                    "answers": [
+                      { "text": "v-click" },
+                      { "text": "v-on" },
+                      { "text": "v-event" },
+                      { "text": "v-bind" }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas afirmativas sobre props em componentes Vue está **incorreta**?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "As props podem ser modificadas diretamente dentro do componente filho",
+                    "answers": [
+                      {
+                        "text": "As props permitem que um componente pai envie dados para um componente filho"
+                      },
+                      {
+                        "text": "As props podem ser modificadas diretamente dentro do componente filho"
+                      },
+                      { "text": "As props podem ter validação de tipo no Vue" }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas funcionalidades do Vue facilita o uso de componentes dentro de outros componentes?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Slots",
+                    "answers": [
+                      { "text": "Props" },
+                      { "text": "Slots" },
+                      { "text": "Mixins" },
+                      { "text": "Directives" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Gerenciamento de Estado com Vuex",
+                "questions": [
+                  {
+                    "text": "O que é Vuex no contexto do Vue.js?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Uma biblioteca para gerenciamento centralizado de estado",
+                    "answers": [
+                      { "text": "Uma ferramenta para manipulação do DOM" },
+                      {
+                        "text": "Uma biblioteca para gerenciamento centralizado de estado"
+                      },
+                      { "text": "Um substituto do Vue Router" },
+                      { "text": "Um plugin para estilização no Vue" }
+                    ]
+                  },
+                  {
+                    "text": "Associe os conceitos do Vuex com suas descrições:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "State", "pairId": 1 },
+                      {
+                        "text": "Armazena os dados centralizados da aplicação",
+                        "pairId": 1
+                      },
+                      { "text": "Mutations", "pairId": 2 },
+                      {
+                        "text": "Responsáveis por modificar o estado de forma síncrona",
+                        "pairId": 2
+                      },
+                      { "text": "Actions", "pairId": 3 },
+                      {
+                        "text": "Executam operações assíncronas e chamam mutations",
+                        "pairId": 3
+                      },
+                      { "text": "Getters", "pairId": 4 },
+                      {
+                        "text": "Retornam valores computados a partir do estado",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual é a forma correta de acessar um estado Vuex dentro de um componente Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "this.$store.state.nomeDoEstado",
+                    "answers": [
+                      { "text": "this.$state.nomeDoEstado" },
+                      { "text": "this.$store.state.nomeDoEstado" },
+                      { "text": "this.$vuex.getState('nomeDoEstado')" },
+                      { "text": "this.store.getState.nomeDoEstado" }
+                    ]
+                  },
+                  {
+                    "text": "Complete a frase: No Vuex, as ________ são usadas para modificar o estado, enquanto as ________ são usadas para realizar operações assíncronas antes de modificar o estado.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "mutations, actions",
+                    "answers": [
+                      { "text": "mutations, actions" },
+                      { "text": "actions, mutations" },
+                      { "text": "getters, mutations" },
+                      { "text": "states, actions" }
+                    ]
+                  },
+                  {
+                    "text": "Ordene corretamente os passos para modificar um estado no Vuex usando uma action e uma mutation.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Criar uma mutation que modifica o estado",
+                        "order": 1
+                      },
+                      {
+                        "text": "Criar uma action que chama a mutation",
+                        "order": 2
+                      },
+                      {
+                        "text": "Disparar a action a partir de um componente",
+                        "order": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O Vuex permite que mutations sejam assíncronas para facilitar chamadas à API.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Falso",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual das opções **não** é uma vantagem do Vuex?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Evita completamente a necessidade de usar props e eventos",
+                    "answers": [
+                      {
+                        "text": "Facilita o compartilhamento de estados entre componentes"
+                      },
+                      {
+                        "text": "Evita completamente a necessidade de usar props e eventos"
+                      },
+                      {
+                        "text": "Melhora a previsibilidade das mudanças de estado"
+                      },
+                      {
+                        "text": "Permite rastrear todas as alterações no estado"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual das opções é a maneira correta de modificar um estado no Vuex?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Chamando uma mutation dentro de uma action ou diretamente no componente",
+                    "answers": [
+                      {
+                        "text": "Acessando diretamente o estado e alterando seu valor"
+                      },
+                      {
+                        "text": "Chamando uma mutation dentro de uma action ou diretamente no componente"
+                      },
+                      {
+                        "text": "Criando um novo estado e substituindo o antigo"
+                      },
+                      { "text": "Usando um getter para modificar o estado" }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas afirmativas sobre Getters no Vuex está **incorreta**?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Os getters podem modificar diretamente o estado",
+                    "answers": [
+                      {
+                        "text": "Os getters são funções que retornam valores computados a partir do estado"
+                      },
+                      {
+                        "text": "Os getters podem modificar diretamente o estado"
+                      },
+                      {
+                        "text": "Podemos acessar getters com this.$store.getters.nomeGetter"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O Vuex é particularmente útil em qual desses cenários?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Aplicações grandes com múltiplos componentes compartilhando estado",
+                    "answers": [
+                      {
+                        "text": "Aplicações com um único componente independente"
+                      },
+                      {
+                        "text": "Aplicações grandes com múltiplos componentes compartilhando estado"
+                      },
+                      {
+                        "text": "Projetos onde o estado não precisa ser compartilhado"
+                      },
+                      {
+                        "text": "Aplicações estáticas sem necessidade de reatividade"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Roteamento no Vue com Vue Router",
+                "questions": [
+                  {
+                    "text": "O que é o Vue Router?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Uma biblioteca oficial para gerenciamento de rotas no Vue.js",
+                    "answers": [
+                      {
+                        "text": "Uma biblioteca para manipulação de estados no Vue"
+                      },
+                      { "text": "Um framework alternativo ao Vue.js" },
+                      {
+                        "text": "Uma biblioteca oficial para gerenciamento de rotas no Vue.js"
+                      },
+                      {
+                        "text": "Um plugin para estilização de componentes Vue"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Associe os conceitos do Vue Router com suas descrições:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Routes", "pairId": 1 },
+                      {
+                        "text": "Define as rotas e os componentes associados",
+                        "pairId": 1
+                      },
+                      { "text": "RouterView", "pairId": 2 },
+                      {
+                        "text": "Renderiza o componente correspondente à rota atual",
+                        "pairId": 2
+                      },
+                      { "text": "RouterLink", "pairId": 3 },
+                      {
+                        "text": "Cria links para navegar entre rotas",
+                        "pairId": 3
+                      },
+                      { "text": "Navigation Guards", "pairId": 4 },
+                      {
+                        "text": "Permitem interceptar e proteger a navegação",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual é a forma correta de definir uma rota no Vue Router?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Definir um array de objetos com `path` e `component` dentro do Vue Router",
+                    "answers": [
+                      { "text": "Criar um arquivo JSON com todas as rotas" },
+                      {
+                        "text": "Usar um switch-case dentro do Vue para definir as rotas"
+                      },
+                      {
+                        "text": "Definir um array de objetos com `path` e `component` dentro do Vue Router"
+                      },
+                      {
+                        "text": "Criar um hook dentro do setup() para manipular rotas manualmente"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Complete a frase: No Vue Router, utilizamos o componente ________ para exibir a página correspondente à rota atual.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "RouterView",
+                    "answers": [
+                      { "text": "RouterView" },
+                      { "text": "RouterLink" },
+                      { "text": "RouteComponent" },
+                      { "text": "VueOutlet" }
+                    ]
+                  },
+                  {
+                    "text": "Ordene corretamente os passos para configurar o Vue Router em um projeto Vue 3.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Instalar o Vue Router com npm ou yarn",
+                        "order": 1
+                      },
+                      {
+                        "text": "Criar um arquivo de configuração de rotas",
+                        "order": 2
+                      },
+                      {
+                        "text": "Definir as rotas dentro do arquivo de configuração",
+                        "order": 3
+                      },
+                      {
+                        "text": "Adicionar o Vue Router ao Vue App",
+                        "order": 4
+                      },
+                      {
+                        "text": "Usar `<RouterView />` no componente principal",
+                        "order": 5
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Podemos utilizar `RouterLink` para criar navegação entre páginas sem recarregar a aplicação.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual dessas opções **não** é um tipo de Navigation Guard no Vue Router?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "beforeUnmount",
+                    "answers": [
+                      { "text": "beforeEach" },
+                      { "text": "beforeResolve" },
+                      { "text": "beforeEnter" },
+                      { "text": "beforeUnmount" }
+                    ]
+                  },
+                  {
+                    "text": "Como podemos acessar parâmetros de rota dentro de um componente Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Usando `useRoute()` e acessando `route.params`",
+                    "answers": [
+                      {
+                        "text": "Usando `useRouter()` e acessando `router.params`"
+                      },
+                      {
+                        "text": "Usando `useRoute()` e acessando `route.params`"
+                      },
+                      { "text": "Definindo um getter no Vuex" },
+                      {
+                        "text": "Criando uma computed property com `window.location`"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual das opções abaixo **não** é uma vantagem de usar Vue Router?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Permite renderizar componentes Vue em aplicações React",
+                    "answers": [
+                      {
+                        "text": "Facilita a navegação sem recarregar a página"
+                      },
+                      {
+                        "text": "Permite criar Single Page Applications (SPA) facilmente"
+                      },
+                      {
+                        "text": "Fornece suporte para Lazy Loading de componentes"
+                      },
+                      {
+                        "text": "Permite renderizar componentes Vue em aplicações React"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O Vue Router permite definir rotas dinâmicas utilizando `:id` nos caminhos das rotas.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "Testando Componentes no Vue",
+                "questions": [
+                  {
+                    "text": "Qual biblioteca é amplamente utilizada para testar componentes Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Vue Test Utils",
+                    "answers": [
+                      { "text": "Vue CLI" },
+                      { "text": "Jest DOM" },
+                      { "text": "Vue Test Utils" },
+                      { "text": "Mocha" }
+                    ]
+                  },
+                  {
+                    "text": "Associe os tipos de testes com suas descrições:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Testes unitários", "pairId": 1 },
+                      {
+                        "text": "Testam funções e componentes isoladamente",
+                        "pairId": 1
+                      },
+                      { "text": "Testes de integração", "pairId": 2 },
+                      {
+                        "text": "Verificam a interação entre múltiplos componentes",
+                        "pairId": 2
+                      },
+                      { "text": "Testes end-to-end", "pairId": 3 },
+                      {
+                        "text": "Simulam o comportamento do usuário na aplicação completa",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual comando do Vue Test Utils cria um wrapper de um componente para ser testado?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "mount()",
+                    "answers": [
+                      { "text": "render()" },
+                      { "text": "mount()" },
+                      { "text": "createComponent()" },
+                      { "text": "setupTest()" }
+                    ]
+                  },
+                  {
+                    "text": "Complete a frase: O framework de testes mais popular para executar testes unitários no Vue é ________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "Jest",
+                    "answers": [
+                      { "text": "Cypress" },
+                      { "text": "Mocha" },
+                      { "text": "Jest" },
+                      { "text": "Chai" }
+                    ]
+                  },
+                  {
+                    "text": "Ordene corretamente os passos para testar um componente Vue com Vue Test Utils.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Importar o componente a ser testado",
+                        "order": 1
+                      },
+                      {
+                        "text": "Criar um wrapper usando `mount()`",
+                        "order": 2
+                      },
+                      {
+                        "text": "Simular interações ou mudanças no estado",
+                        "order": 3
+                      },
+                      {
+                        "text": "Verificar se o comportamento esperado ocorre",
+                        "order": 4
+                      },
+                      {
+                        "text": "Rodar o teste e verificar o resultado",
+                        "order": 5
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Os testes unitários verificam o funcionamento de múltiplos componentes ao mesmo tempo.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Falso",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "A função _________ é usada para simular eventos no Vue Test Utils.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "setTimeout",
+                    "answers": [
+                      { "text": "trigger" },
+                      { "text": "setValue" },
+                      { "text": "setTimeout" },
+                      { "text": "find" }
+                    ]
+                  },
+                  {
+                    "text": "Qual abordagem é recomendada para testar componentes Vue que utilizam Vuex?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Criar um mock do Vuex Store para testar os componentes isoladamente",
+                    "answers": [
+                      { "text": "Desativar o Vuex nos testes" },
+                      {
+                        "text": "Criar um mock do Vuex Store para testar os componentes isoladamente"
+                      },
+                      {
+                        "text": "Rodar os testes apenas com dados reais da API"
+                      },
+                      {
+                        "text": "Usar um banco de dados real para validar os testes"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual das opções abaixo **não** é uma vantagem de testar componentes Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Evita que bugs aconteçam em produção",
+                    "answers": [
+                      { "text": "Aumenta a confiabilidade do código" },
+                      { "text": "Facilita refatorações futuras" },
+                      { "text": "Ajuda a detectar regressões no código" },
+                      { "text": "Evita que bugs aconteçam em produção" }
+                    ]
+                  },
+                  {
+                    "text": "Cypress é uma ferramenta comumente utilizada para testes end-to-end em aplicações Vue.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "Estilização com Scoped CSS e Vue",
+                "questions": [
+                  {
+                    "text": "O atributo 'scoped' no Vue permite que o CSS afete apenas o componente em que está declarado.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual das alternativas abaixo não é uma maneira válida de adicionar estilos a um componente Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Estilos inline usando o atributo style diretamente no componente",
+                    "answers": [
+                      { "text": "Estilos dentro de uma tag <style scoped>" },
+                      { "text": "Estilos importados de um arquivo .css" },
+                      {
+                        "text": "Estilos inline usando o atributo style diretamente no componente"
+                      },
+                      {
+                        "text": "Estilos definidos no objeto 'style' dentro da instância Vue"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Composition API",
+                "questions": [
+                  {
+                    "text": "Dentro da Composition API, qual código abaixo está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "setup() { return count }",
+                    "answers": [
+                      { "text": "setup() { return { count } }" },
+                      { "text": "setup() { return count }" },
+                      { "text": "setup() { return { value: count } }" },
+                      { "text": "setup() { return { count: count } }" }
+                    ]
+                  },
+                  {
+                    "text": "Qual das opções abaixo representa corretamente a importação e uso do 'ref' dentro da Composition API?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "import { ref } from 'vue'; const count = ref(0);",
+                    "answers": [
+                      {
+                        "text": "import { ref } from 'vue'; const count = ref(0);"
+                      },
+                      {
+                        "text": "import ref from 'vue'; const count = ref(0);"
+                      },
+                      { "text": "const count = ref(0);" },
+                      {
+                        "text": "import { useRef } from 'vue'; const count = useRef(0);"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Associe corretamente os conceitos da Composition API aos seus respectivos usos.",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "ref()", "pairId": 1 },
+                      { "text": "Cria um estado reativo", "pairId": 1 },
+                      { "text": "computed()", "pairId": 2 },
+                      { "text": "Cria propriedades computadas", "pairId": 2 },
+                      { "text": "watch()", "pairId": 3 },
+                      {
+                        "text": "Observa mudanças em estados reativos",
+                        "pairId": 3
+                      },
+                      { "text": "onMounted()", "pairId": 4 },
+                      {
+                        "text": "Executa código após a montagem do componente",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A função 'ref' é utilizada para __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "criar estados reativos individuais",
+                    "answers": [
+                      { "text": "criar estados reativos individuais" },
+                      { "text": "definir propriedades computadas" },
+                      { "text": "executar efeitos colaterais" },
+                      { "text": "manipular eventos do DOM" }
+                    ]
+                  },
+                  {
+                    "text": "Dentro da Composition API, qual código abaixo está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "const state = reactive(0);",
+                    "answers": [
+                      { "text": "const state = reactive({ count: 0 });" },
+                      { "text": "const state = reactive(0);" },
+                      { "text": "const state = reactive({ value: 0 });" },
+                      { "text": "const state = reactive({ name: 'Vue' });" }
+                    ]
+                  },
+                  {
+                    "text": "O que acontece se retornarmos um 'ref' diretamente no setup()?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Ele não será automaticamente desestruturado no template, exigindo '.value' para acesso.",
+                    "answers": [
+                      {
+                        "text": "Ele será automaticamente desestruturado no template."
+                      },
+                      {
+                        "text": "Ele não será automaticamente desestruturado no template, exigindo '.value' para acesso."
+                      },
+                      {
+                        "text": "O Vue lançará um erro, pois 'ref' não pode ser retornado do setup()."
+                      },
+                      {
+                        "text": "O 'ref' perderá sua reatividade ao ser retornado."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ordene corretamente as etapas para definir um estado reativo usando a Composition API.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      { "text": "Importar ref ou reactive do Vue", "order": 1 },
+                      {
+                        "text": "Criar uma variável usando ref() ou reactive()",
+                        "order": 2
+                      },
+                      {
+                        "text": "Retornar a variável dentro do setup()",
+                        "order": 3
+                      },
+                      {
+                        "text": "Utilizar a variável no template do componente",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Dentro do 'watch()', qual código abaixo está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "watch(() => console.log('Reactivo'));",
+                    "answers": [
+                      {
+                        "text": "watch(count, (newVal, oldVal) => console.log(newVal));"
+                      },
+                      {
+                        "text": "watch(() => count.value, (newVal, oldVal) => console.log(newVal));"
+                      },
+                      {
+                        "text": "watch(count, newVal => console.log(newVal));"
+                      },
+                      { "text": "watch(() => console.log('Reactivo'));" }
+                    ]
+                  },
+                  {
+                    "text": "O Vue usa 'ref()' para criar variáveis reativas.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O método 'computed()' é utilizado para __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "criar propriedades derivadas reativas",
+                    "answers": [
+                      { "text": "criar propriedades derivadas reativas" },
+                      { "text": "observar mudanças em um estado" },
+                      { "text": "modificar o DOM diretamente" },
+                      { "text": "registrar eventos globais" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Testes",
+            "slug": "testes",
+            "lessons": [
+              {
+                "name": "Lesson 1: Introdução ao Testes em Front-End",
+                "questions": [
+                  {
+                    "text": "Os testes em front-end são fundamentais para garantir que a aplicação funcione corretamente em diferentes cenários.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual é a principal vantagem de testar componentes no front-end?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Aumenta a confiabilidade e estabilidade da aplicação",
+                    "answers": [
+                      {
+                        "text": "Aumenta a confiabilidade e estabilidade da aplicação"
+                      },
+                      { "text": "Facilita o deploy de componentes" },
+                      { "text": "Evita o uso de bibliotecas externas" },
+                      { "text": "Reduz o tempo de desenvolvimento" }
+                    ]
+                  },
+                  {
+                    "text": "Associe os tipos de testes à sua descrição:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Teste unitário", "pairId": 1 },
+                      {
+                        "text": "Verifica a lógica de um componente isolado",
+                        "pairId": 1
+                      },
+                      { "text": "Teste de integração", "pairId": 2 },
+                      {
+                        "text": "Verifica a interação entre componentes",
+                        "pairId": 2
+                      },
+                      { "text": "Teste end-to-end", "pairId": 3 },
+                      {
+                        "text": "Verifica o comportamento completo da aplicação",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(wrapper.find('button').toHaveTextContent('Submit'))",
+                    "answers": [
+                      {
+                        "text": "expect(wrapper.find('button').toHaveTextContent('Submit'))"
+                      },
+                      {
+                        "text": "expect(wrapper.find('button').text()).toBe('Submit')"
+                      },
+                      {
+                        "text": "expect(wrapper.find('button').exists()).toBe(true)"
+                      },
+                      {
+                        "text": "expect(wrapper.find('button').toHaveClass('btn-primary'))"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ordene as etapas para realizar um teste unitário com Jest:",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      { "text": "Importe o componente", "order": 1 },
+                      {
+                        "text": "Crie a estrutura do teste usando 'describe' e 'it'",
+                        "order": 2
+                      },
+                      { "text": "Renderize o componente", "order": 3 },
+                      {
+                        "text": "Faça asserções para validar o comportamento",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O que o Jest utiliza para verificar se um componente foi renderizado corretamente?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "matchSnapshot",
+                    "answers": [
+                      { "text": "matchSnapshot" },
+                      { "text": "toBeInTheDocument" },
+                      { "text": "toHaveBeenCalled" },
+                      { "text": "toHaveLength" }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(getByText('button')).toBeInTheDocument();",
+                    "answers": [
+                      {
+                        "text": "expect(getByText('button')).toBeInTheDocument();"
+                      },
+                      {
+                        "text": "expect(getByRole('button')).toBeInTheDocument();"
+                      },
+                      {
+                        "text": "expect(getByText('button')).toHaveTextContent('button');"
+                      },
+                      {
+                        "text": "expect(getByRole('button')).toHaveTextContent('button');"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A função 'beforeEach' no Jest é utilizada para:",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Executar código antes de cada teste",
+                    "answers": [
+                      { "text": "Executar código antes de cada teste" },
+                      { "text": "Executar código após todos os testes" },
+                      { "text": "Configurar o ambiente de testes" },
+                      { "text": "Limpar mocks entre testes" }
+                    ]
+                  },
+                  {
+                    "text": "A ferramenta 'React Testing Library' foca em testar a interação dos usuários com o componente, e não sua implementação interna.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "Lesson 2: Testes Unitários e de Integração",
+                "questions": [
+                  {
+                    "text": "Testes unitários visam verificar o comportamento de um único componente ou função isoladamente.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual é a principal vantagem de utilizar testes unitários?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Detectar erros rapidamente durante o desenvolvimento",
+                    "answers": [
+                      {
+                        "text": "Detectar erros rapidamente durante o desenvolvimento"
+                      },
+                      {
+                        "text": "Aumentar a cobertura de código automaticamente"
+                      },
+                      { "text": "Reduzir o tempo de execução do código" },
+                      { "text": "Fazer a validação de requisitos de negócios" }
+                    ]
+                  },
+                  {
+                    "text": "Associe o tipo de teste à sua descrição:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Teste unitário", "pairId": 1 },
+                      {
+                        "text": "Verifica a lógica de um componente ou função isolada",
+                        "pairId": 1
+                      },
+                      { "text": "Teste de integração", "pairId": 2 },
+                      {
+                        "text": "Verifica a interação entre componentes ou serviços",
+                        "pairId": 2
+                      },
+                      { "text": "Teste end-to-end", "pairId": 3 },
+                      {
+                        "text": "Verifica o comportamento completo da aplicação",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(fetchData).toHaveBeenCalled();",
+                    "answers": [
+                      { "text": "expect(fetchData).toHaveBeenCalled();" },
+                      { "text": "expect(fetchData).toHaveBeenCalledTimes(1);" },
+                      {
+                        "text": "expect(fetchData).toHaveBeenCalledWith('/api');"
+                      },
+                      {
+                        "text": "expect(fetchData).toHaveBeenCalledWith('/api', { method: 'GET' });"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ordene as etapas de um teste unitário no Jest:",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Importe o componente ou função a ser testada",
+                        "order": 1
+                      },
+                      {
+                        "text": "Escreva os casos de teste com 'it' ou 'test'",
+                        "order": 2
+                      },
+                      {
+                        "text": "Configure mocks ou spies necessários",
+                        "order": 3
+                      },
+                      {
+                        "text": "Use asserções para verificar o comportamento esperado",
+                        "order": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Em testes unitários, o que é um mock?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Uma função ou objeto simulando o comportamento de uma dependência",
+                    "answers": [
+                      {
+                        "text": "Uma função ou objeto simulando o comportamento de uma dependência"
+                      },
+                      {
+                        "text": "Uma função que executa o comportamento real do componente"
+                      },
+                      {
+                        "text": "Uma função que verifica as chamadas feitas a ela"
+                      },
+                      {
+                        "text": "Uma função usada para testar a UI de forma isolada"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(component).toHaveLength(1);",
+                    "answers": [
+                      { "text": "expect(component).toHaveLength(1);" },
+                      { "text": "expect(component).toBeInTheDocument();" },
+                      {
+                        "text": "expect(component).toContainHTML('<button>');"
+                      },
+                      { "text": "expect(component).toHaveClass('active');" }
+                    ]
+                  },
+                  {
+                    "text": "Em um teste de integração, qual ferramenta pode ser usada para simular chamadas de API?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "mockResolvedValue",
+                    "answers": [
+                      { "text": "mockResolvedValue" },
+                      { "text": "jest.fn()" },
+                      { "text": "mockImplementationOnce" },
+                      { "text": "expect.fn()" }
+                    ]
+                  },
+                  {
+                    "text": "Quando utilizamos o Jest para teste de integração, devemos simular a integração entre componentes, serviços e APIs.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O método 'beforeEach' no Jest é utilizado para configurar o ambiente antes de cada teste. Quando ele deve ser utilizado?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Antes de cada caso de teste que requer a mesma configuração",
+                    "answers": [
+                      {
+                        "text": "Antes de cada caso de teste que requer a mesma configuração"
+                      },
+                      {
+                        "text": "Antes de todos os testes no arquivo de teste"
+                      },
+                      { "text": "Após cada execução de teste" },
+                      { "text": "Após todos os testes no arquivo de teste" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Lesson 3: Testes de Componentes com Jest",
+                "questions": [
+                  {
+                    "text": "Ao testar um componente com Jest, qual função usamos para renderizar o componente?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "render",
+                    "answers": [
+                      { "text": "render" },
+                      { "text": "mount" },
+                      { "text": "shallow" },
+                      { "text": "renderComponent" }
+                    ]
+                  },
+                  {
+                    "text": "Qual é o propósito do método 'toBeInTheDocument' no Jest?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Verificar se o componente foi renderizado na tela",
+                    "answers": [
+                      {
+                        "text": "Verificar se o componente foi renderizado na tela"
+                      },
+                      {
+                        "text": "Verificar se o componente possui algum erro de sintaxe"
+                      },
+                      {
+                        "text": "Verificar se o componente foi montado corretamente"
+                      },
+                      {
+                        "text": "Verificar se o componente foi chamado com os dados corretos"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(container).toHaveClass('active');",
+                    "answers": [
+                      { "text": "expect(container).toHaveClass('active');" },
+                      { "text": "expect(container).toHaveTextContent('Olá');" },
+                      {
+                        "text": "expect(container).toHaveAttribute('data-test', 'value');"
+                      },
+                      { "text": "expect(container).toContainHTML('<button>');" }
+                    ]
+                  },
+                  {
+                    "text": "Quando usamos o método 'fireEvent' no Jest, o que ele simula?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Eventos de interação, como clique ou digitação",
+                    "answers": [
+                      {
+                        "text": "Eventos de interação, como clique ou digitação"
+                      },
+                      { "text": "Mudanças no estado do componente" },
+                      { "text": "A passagem de props para o componente" },
+                      { "text": "Alterações nos elementos DOM" }
+                    ]
+                  },
+                  {
+                    "text": "Qual é a diferença entre 'shallowMount' e 'mount' no Jest?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "shallowMount renderiza o componente sem seus filhos",
+                    "answers": [
+                      {
+                        "text": "shallowMount renderiza o componente sem seus filhos"
+                      },
+                      { "text": "mount não suporta componentes com hooks" },
+                      { "text": "shallowMount é mais lento que mount" },
+                      {
+                        "text": "mount não permite testar a renderização do componente"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Em um teste de Jest, qual é a função que usamos para simular um clique em um botão?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "fireEvent.click",
+                    "answers": [
+                      { "text": "fireEvent.click" },
+                      { "text": "simulateClick" },
+                      { "text": "clickButton" },
+                      { "text": "triggerClick" }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(component).toHaveTextContent('Olá, Mundo');",
+                    "answers": [
+                      {
+                        "text": "expect(component).toHaveTextContent('Olá, Mundo');"
+                      },
+                      {
+                        "text": "expect(component).toHaveClass('my-component');"
+                      },
+                      { "text": "expect(component).toBeInTheDocument();" },
+                      {
+                        "text": "expect(component).toContainHTML('<div></div>');"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual método podemos usar para verificar se uma função foi chamada em um teste?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "toHaveBeenCalled",
+                    "answers": [
+                      { "text": "toHaveBeenCalled" },
+                      { "text": "toBeCalled" },
+                      { "text": "toHaveBeenExecuted" },
+                      { "text": "toHaveRun" }
+                    ]
+                  },
+                  {
+                    "text": "Qual é o objetivo de se usar mocks em testes de componentes?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Isolar o teste, simulando dependências externas",
+                    "answers": [
+                      {
+                        "text": "Isolar o teste, simulando dependências externas"
+                      },
+                      {
+                        "text": "Testar as interações entre componentes filhos"
+                      },
+                      {
+                        "text": "Garantir que o código será executado sem erros"
+                      },
+                      {
+                        "text": "Aumentar a cobertura de código automaticamente"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Em um teste com Jest, qual função usamos para verificar se uma função foi chamada com parâmetros específicos?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "toHaveBeenCalledWith",
+                    "answers": [
+                      { "text": "toHaveBeenCalledWith" },
+                      { "text": "toHaveArguments" },
+                      { "text": "toHaveParameters" },
+                      { "text": "toHaveCalled" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Lesson 4: Testes de Integração entre Componentes e APIs",
+                "questions": [
+                  {
+                    "text": "Qual é o objetivo principal dos testes de integração?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Verificar a interação entre diferentes partes do sistema",
+                    "answers": [
+                      {
+                        "text": "Verificar a interação entre diferentes partes do sistema"
+                      },
+                      { "text": "Testar a performance do sistema sob carga" },
+                      {
+                        "text": "Verificar a renderização de um único componente"
+                      },
+                      {
+                        "text": "Garantir que todos os testes unitários passaram"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Em um teste de integração com uma API, qual método do Jest você usaria para simular uma chamada HTTP?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "jest.mock",
+                    "answers": [
+                      { "text": "jest.mock" },
+                      { "text": "fetch" },
+                      { "text": "axios.get" },
+                      { "text": "jest.fn" }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(response).toHaveStatus(200);",
+                    "answers": [
+                      { "text": "expect(response).toHaveStatus(200);" },
+                      { "text": "expect(response).toBeDefined();" },
+                      {
+                        "text": "expect(response.data).toBeInstanceOf(Object);"
+                      },
+                      { "text": "expect(response.status).toBe(200);" }
+                    ]
+                  },
+                  {
+                    "text": "Como podemos testar se um componente renderiza corretamente após a resposta de uma API?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Usando 'await' para esperar a resposta e verificar a renderização",
+                    "answers": [
+                      {
+                        "text": "Usando 'await' para esperar a resposta e verificar a renderização"
+                      },
+                      { "text": "Simulando um clique no componente" },
+                      {
+                        "text": "Verificando apenas se o componente foi montado"
+                      },
+                      {
+                        "text": "Verificando se a resposta da API é exibida diretamente no console"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Quando usamos o 'axios' em testes de integração, qual método podemos usar para fazer uma requisição GET?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "axios.get",
+                    "answers": [
+                      { "text": "axios.get" },
+                      { "text": "axios.fetch" },
+                      { "text": "axios.request" },
+                      { "text": "axios.send" }
+                    ]
+                  },
+                  {
+                    "text": "Qual dessas opções é usada para mockar uma API em um teste de integração?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "jest.mock('axios')",
+                    "answers": [
+                      { "text": "jest.mock('axios')" },
+                      { "text": "mockAxios()" },
+                      { "text": "jest.fn('axios')" },
+                      { "text": "mockApi()" }
+                    ]
+                  },
+                  {
+                    "text": "Como podemos testar um componente que faz uma requisição assíncrona para uma API no Vue?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Usando 'await' para esperar a resposta e verificar a renderização do componente",
+                    "answers": [
+                      {
+                        "text": "Usando 'await' para esperar a resposta e verificar a renderização do componente"
+                      },
+                      { "text": "Usando setTimeout para esperar a resposta" },
+                      {
+                        "text": "Simulando um clique e verificando o retorno da API"
+                      },
+                      {
+                        "text": "Verificando se a API foi chamada, mas sem aguardar a resposta"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "expect(mockedApi).toHaveBeenCalled();",
+                    "answers": [
+                      { "text": "expect(mockedApi).toHaveBeenCalled();" },
+                      { "text": "expect(mockedApi).toHaveBeenCalledTimes(1);" },
+                      {
+                        "text": "expect(mockedApi).toHaveBeenCalledWith('GET', '/endpoint');"
+                      },
+                      { "text": "expect(mockedApi).toBeDefined();" }
+                    ]
+                  },
+                  {
+                    "text": "Associe os métodos de teste aos seus comportamentos correspondentes:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "toHaveBeenCalled", "pairId": 1 },
+                      {
+                        "text": "Verifica se a função foi chamada",
+                        "pairId": 1
+                      },
+                      { "text": "toHaveBeenCalledTimes", "pairId": 2 },
+                      {
+                        "text": "Verifica se a função foi chamada o número correto de vezes",
+                        "pairId": 2
+                      },
+                      { "text": "toHaveBeenCalledWith", "pairId": 3 },
+                      {
+                        "text": "Verifica se a função foi chamada com os parâmetros corretos",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Organize os passos para testar a integração de um componente com uma API:",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      { "text": "Simular a resposta da API", "pairId": 1 },
+                      { "text": "Chamar o componente", "pairId": 2 },
+                      {
+                        "text": "Verificar a renderização do componente",
+                        "pairId": 3
+                      },
+                      {
+                        "text": "Verificar a resposta no componente",
+                        "pairId": 4
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Lesson 5: Testes End-to-End com Cypress",
+                "questions": [
+                  {
+                    "text": "Qual é o propósito de 'cy.get()' no Cypress?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Selecionar um elemento na página para interagir com ele",
+                    "answers": [
+                      {
+                        "text": "Selecionar um elemento na página para interagir com ele"
+                      },
+                      {
+                        "text": "Verificar se um componente foi renderizado corretamente"
+                      },
+                      { "text": "Aguardar a resposta da API" },
+                      { "text": "Simular um clique no elemento" }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "cy.get('.submit').click();",
+                    "answers": [
+                      { "text": "cy.get('.submit').click();" },
+                      { "text": "cy.get('.submit').type('text');" },
+                      { "text": "cy.get('.submit').should('be.visible');" },
+                      { "text": "cy.get('.submit').contains('Submit');" }
+                    ]
+                  },
+                  {
+                    "text": "Qual comando é usado no Cypress para verificar se um elemento contém um texto específico?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "cy.contains()",
+                    "answers": [
+                      { "text": "cy.contains()" },
+                      { "text": "cy.text()" },
+                      { "text": "cy.getText()" },
+                      { "text": "cy.checkText()" }
+                    ]
+                  },
+                  {
+                    "text": "Qual desses comandos do Cypress pode ser usado para garantir que uma página tenha carregado corretamente?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "cy.url().should('include', '/home')",
+                    "answers": [
+                      { "text": "cy.url().should('include', '/home')" },
+                      { "text": "cy.visit('/home').should('exist')" },
+                      { "text": "cy.wait(5000)" },
+                      { "text": "cy.get('.home').should('be.visible')" }
+                    ]
+                  },
+                  {
+                    "text": "O que o comando 'cy.intercept()' faz no Cypress?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Intercepta as requisições HTTP feitas pelo seu aplicativo para mocká-las ou inspecioná-las",
+                    "answers": [
+                      {
+                        "text": "Intercepta as requisições HTTP feitas pelo seu aplicativo para mocká-las ou inspecioná-las"
+                      },
+                      {
+                        "text": "Verifica se as rotas estão funcionando corretamente"
+                      },
+                      { "text": "Exclui os dados do cache da aplicação" },
+                      { "text": "Simula uma falha na resposta da API" }
+                    ]
+                  },
+                  {
+                    "text": "Como podemos simular um preenchimento de formulário com o Cypress?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Usando 'cy.get().type()' para inserir texto nos campos de formulário",
+                    "answers": [
+                      {
+                        "text": "Usando 'cy.get().type()' para inserir texto nos campos de formulário"
+                      },
+                      {
+                        "text": "Usando 'cy.fillForm()' para preencher todos os campos automaticamente"
+                      },
+                      {
+                        "text": "Usando 'cy.get().click()' para preencher os campos"
+                      },
+                      {
+                        "text": "Usando 'cy.form().submit()' para submeter o formulário sem preencher"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "cy.visit('http://localhost:3000')",
+                    "answers": [
+                      { "text": "cy.visit('http://localhost:3000')" },
+                      { "text": "cy.visit('/home')" },
+                      { "text": "cy.visit('http://localhost:8080')" },
+                      { "text": "cy.get('h1').should('have.text', 'Home')" }
+                    ]
+                  },
+                  {
+                    "text": "Associe os comandos do Cypress aos seus comportamentos correspondentes:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "cy.visit()", "pairId": 1 },
+                      { "text": "Visita uma página", "pairId": 1 },
+                      { "text": "cy.get()", "pairId": 2 },
+                      { "text": "Seleciona um elemento", "pairId": 2 },
+                      { "text": "cy.contains()", "pairId": 3 },
+                      {
+                        "text": "Verifica o conteúdo de um elemento",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Organize os passos para criar um teste end-to-end com Cypress:",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Visitar a página com cy.visit()",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Selecionar o elemento com cy.get()",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Simular interações, como cliques ou digitação",
+                        "pairId": 3
+                      },
+                      {
+                        "text": "Verificar os resultados esperados",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Testes end-to-end garantem que toda a aplicação funciona conforme o esperado, interagindo com as camadas externas e externas de um sistema.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "Lesson 6: Mocks e Spies em Testes",
+                "questions": [
+                  {
+                    "text": "Qual é o propósito de um 'mock' em testes?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Substituir uma função ou objeto para controlar seu comportamento durante o teste",
+                    "answers": [
+                      {
+                        "text": "Substituir uma função ou objeto para controlar seu comportamento durante o teste"
+                      },
+                      {
+                        "text": "Testar a interação de um componente com um backend real"
+                      },
+                      {
+                        "text": "Simular o comportamento de um componente no navegador"
+                      },
+                      {
+                        "text": "Verificar a cobertura de testes em um componente"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O que é um 'spy' em testes?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Uma função que espia o comportamento de outra função, sem modificar sua implementação",
+                    "answers": [
+                      {
+                        "text": "Uma função que espia o comportamento de outra função, sem modificar sua implementação"
+                      },
+                      {
+                        "text": "Uma função que simula o comportamento de uma API externa"
+                      },
+                      {
+                        "text": "Uma função que impede a execução de um componente real durante o teste"
+                      },
+                      {
+                        "text": "Uma função que serve para verificar se um teste foi executado"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "jest.fn().mockReturnValue('mocked')",
+                    "answers": [
+                      { "text": "jest.fn().mockReturnValue('mocked')" },
+                      { "text": "jest.spyOn(obj, 'method')" },
+                      { "text": "jest.fn(() => 'mocked')" },
+                      { "text": "jest.fn().mockResolvedValue('mocked')" }
+                    ]
+                  },
+                  {
+                    "text": "Associe os tipos de mocks aos seus comportamentos:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "mockReturnValue", "pairId": 1 },
+                      {
+                        "text": "Retorna um valor específico quando a função é chamada",
+                        "pairId": 1
+                      },
+                      { "text": "mockImplementation", "pairId": 2 },
+                      {
+                        "text": "Define o comportamento da função mockada",
+                        "pairId": 2
+                      },
+                      { "text": "mockResolvedValue", "pairId": 3 },
+                      {
+                        "text": "Simula o comportamento de uma função assíncrona",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Como podemos verificar se uma função mockada foi chamada pelo menos uma vez?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "expect(mockFn).toHaveBeenCalled()",
+                    "answers": [
+                      { "text": "expect(mockFn).toHaveBeenCalled()" },
+                      { "text": "expect(mockFn).toHaveBeenCalledTimes(1)" },
+                      { "text": "expect(mockFn).toBeCalled()" },
+                      { "text": "expect(mockFn).toBeCalledOnce()" }
+                    ]
+                  },
+                  {
+                    "text": "Organize os passos para usar um mock com Jest:",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Criar a função mock com jest.fn()",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Definir o comportamento desejado com mockReturnValue() ou mockImplementation()",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Utilizar a função mockada no teste",
+                        "pairId": 3
+                      },
+                      {
+                        "text": "Verificar se o mock foi chamado ou retornou o valor esperado",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O comando 'jest.spyOn()' permite espiar o comportamento de funções, sem alterá-las.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual é a principal diferença entre 'mock' e 'spy' em Jest?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Um mock substitui a função original, enquanto um spy apenas espia a função original",
+                    "answers": [
+                      {
+                        "text": "Um mock substitui a função original, enquanto um spy apenas espia a função original"
+                      },
+                      {
+                        "text": "Ambos são usados para simular comportamentos assíncronos"
+                      },
+                      {
+                        "text": "Mocks e spies são usados apenas para testar o comportamento de componentes UI"
+                      },
+                      {
+                        "text": "Spies são mais eficientes do que mocks em termos de performance"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A estrutura 'else' é usada em conjunto com __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "if",
+                    "answers": [
+                      { "text": "if" },
+                      { "text": "for" },
+                      { "text": "switch" },
+                      { "text": "while" }
+                    ]
+                  },
+                  {
+                    "text": "Qual a diferença entre 'mockResolvedValue' e 'mockReturnValue'?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "'mockResolvedValue' é usado para funções assíncronas, enquanto 'mockReturnValue' é para funções síncronas",
+                    "answers": [
+                      {
+                        "text": "'mockResolvedValue' é usado para funções assíncronas, enquanto 'mockReturnValue' é para funções síncronas"
+                      },
+                      {
+                        "text": "'mockResolvedValue' sempre retorna um valor resolvido, enquanto 'mockReturnValue' pode retornar valores sincronizados ou resolvidos"
+                      },
+                      {
+                        "text": "'mockResolvedValue' é usado apenas para objetos, enquanto 'mockReturnValue' pode ser usado com qualquer tipo de dado"
+                      },
+                      {
+                        "text": "'mockResolvedValue' não pode ser usado com promessas, apenas com funções comuns"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Boas Práticas e Performance",
+            "slug": "boas-praticas-e-performance",
+            "lessons": [
+              {
+                "name": "Lesson 1: Estrutura de Pastas e Componentização",
+                "questions": [
+                  {
+                    "text": "Qual das opções abaixo é a melhor prática para organizar componentes em uma aplicação React?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Criar uma pasta 'components' e organizar subpastas por tipo de componente",
+                    "answers": [
+                      {
+                        "text": "Criar uma pasta 'components' e organizar subpastas por tipo de componente"
+                      },
+                      {
+                        "text": "Colocar todos os componentes dentro de uma única pasta 'src'"
+                      },
+                      {
+                        "text": "Criar pastas separadas para cada página e componente nela"
+                      },
+                      {
+                        "text": "Misturar componentes e estilos dentro da mesma pasta"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "import { MyComponent } from './components/MyComponent';",
+                    "answers": [
+                      {
+                        "text": "import { MyComponent } from './components/MyComponent';"
+                      },
+                      {
+                        "text": "import MyComponent from './components/MyComponent';"
+                      },
+                      { "text": "import MyComponent from './components';" },
+                      { "text": "import { MyComponent } from './components';" }
+                    ]
+                  },
+                  {
+                    "text": "Associe as melhores práticas para estrutura de pastas com suas descrições:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Pasta 'components'", "pairId": 1 },
+                      {
+                        "text": "Armazena componentes reutilizáveis",
+                        "pairId": 1
+                      },
+                      { "text": "Pasta 'pages'", "pairId": 2 },
+                      {
+                        "text": "Armazena os componentes de cada página",
+                        "pairId": 2
+                      },
+                      { "text": "Pasta 'assets'", "pairId": 3 },
+                      {
+                        "text": "Armazena imagens, fontes e outros arquivos estáticos",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Ao organizar componentes de forma eficiente, devemos evitar __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "a duplicação de componentes em diferentes pastas",
+                    "answers": [
+                      {
+                        "text": "a duplicação de componentes em diferentes pastas"
+                      },
+                      {
+                        "text": "utilizar componentes que não são reutilizáveis"
+                      },
+                      {
+                        "text": "manter arquivos de estilo junto aos componentes"
+                      },
+                      {
+                        "text": "ter muitas pastas para organizar os componentes"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O React recomenda a criação de componentes pequenos e reutilizáveis para facilitar a manutenção e a escalabilidade da aplicação.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual a estrutura correta para definir um componente funcional no React?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "const MyComponent = () => { return <div>...</div>; }",
+                    "answers": [
+                      {
+                        "text": "const MyComponent = () => { return <div>...</div>; }"
+                      },
+                      {
+                        "text": "function MyComponent() { return <div>...</div>; }"
+                      },
+                      {
+                        "text": "const MyComponent = function() { return <div>...</div>; }"
+                      },
+                      { "text": "const MyComponent = () => <div>...</div>;" }
+                    ]
+                  },
+                  {
+                    "text": "Organize a sequência para organizar a estrutura de pastas de forma eficiente:",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Criar uma pasta 'components' para armazenar os componentes",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Criar uma pasta 'assets' para armazenar arquivos estáticos",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Criar uma pasta 'pages' para armazenar os componentes de cada página",
+                        "pairId": 3
+                      },
+                      {
+                        "text": "Evitar duplicação de componentes em múltiplas pastas",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Quando se deve optar por criar componentes mais complexos ao invés de componentes pequenos?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Quando o componente não for reutilizável em várias partes da aplicação",
+                    "answers": [
+                      {
+                        "text": "Quando o componente não for reutilizável em várias partes da aplicação"
+                      },
+                      {
+                        "text": "Quando for necessário um componente altamente reutilizável"
+                      },
+                      {
+                        "text": "Quando a lógica de um componente for simples"
+                      },
+                      {
+                        "text": "Quando a equipe de desenvolvimento preferir menos arquivos"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A estrutura de pastas no Vue.js geralmente organiza os componentes em subpastas, como 'views' e 'components'. Isso é considerado uma boa prática?",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "Otimização de Desempenho em React, Angular e Vue",
+                "questions": [
+                  {
+                    "text": "Qual é a principal técnica de otimização de desempenho no React quando há renderizações excessivas de componentes?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Uso de React.memo para memorizar componentes",
+                    "answers": [
+                      {
+                        "text": "Uso de React.memo para memorizar componentes"
+                      },
+                      {
+                        "text": "Usar componentDidUpdate para controlar atualizações"
+                      },
+                      {
+                        "text": "Reduzir a quantidade de props passadas para os componentes"
+                      },
+                      { "text": "Evitar o uso de Hooks" }
+                    ]
+                  },
+                  {
+                    "text": "No Vue, qual técnica pode ser utilizada para melhorar o desempenho ao trabalhar com listas grandes?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Uso de v-for com v-bind:key para melhorar a reatividade",
+                    "answers": [
+                      {
+                        "text": "Uso de v-for com v-bind:key para melhorar a reatividade"
+                      },
+                      {
+                        "text": "Utilizar apenas computed properties ao invés de data"
+                      },
+                      {
+                        "text": "Evitar o uso de watchers e utilizar apenas methods"
+                      },
+                      {
+                        "text": "Usar o método 'watch' para observar dados do DOM"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "const memoizedValue = useMemo(calculateValue, [])",
+                    "answers": [
+                      {
+                        "text": "const memoizedValue = useMemo(calculateValue, [])"
+                      },
+                      {
+                        "text": "const memoizedValue = useMemo(() => calculateValue(), [])"
+                      },
+                      {
+                        "text": "const memoizedValue = useMemo(calculateValue, [dependency])"
+                      },
+                      {
+                        "text": "const memoizedValue = useMemo(() => calculateValue(), [dependency])"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Associe as práticas de otimização com suas respectivas tecnologias:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "React", "pairId": 1 },
+                      {
+                        "text": "Uso de React.memo para otimizar componentes",
+                        "pairId": 1
+                      },
+                      { "text": "Angular", "pairId": 2 },
+                      {
+                        "text": "ChangeDetectionStrategy.OnPush para otimização de detecção de mudanças",
+                        "pairId": 2
+                      },
+                      { "text": "Vue", "pairId": 3 },
+                      {
+                        "text": "Uso de v-for com v-bind:key para renderizar listas",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O uso de `ChangeDetectionStrategy.OnPush` no Angular melhora o desempenho ao verificar mudanças somente quando as entradas de um componente são alteradas.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quando usar o `shouldComponentUpdate` no React?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Para controlar manualmente a re-renderização de um componente",
+                    "answers": [
+                      {
+                        "text": "Para controlar manualmente a re-renderização de um componente"
+                      },
+                      {
+                        "text": "Para otimizar o uso de props em um componente funcional"
+                      },
+                      {
+                        "text": "Para evitar a renderização de componentes em listas grandes"
+                      },
+                      {
+                        "text": "Para criar um componente somente quando a propriedade de estado mudar"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Em Vue, o uso de `v-bind:key` em listas ajuda a __________.",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "identificar cada item da lista de forma única para otimizar a renderização",
+                    "answers": [
+                      {
+                        "text": "identificar cada item da lista de forma única para otimizar a renderização"
+                      },
+                      {
+                        "text": "fazer com que a lista seja ordenada automaticamente"
+                      },
+                      { "text": "evitar a duplicação de itens na lista" },
+                      { "text": "organizar o fluxo de dados dentro do Vuex" }
+                    ]
+                  },
+                  {
+                    "text": "O uso de `React.lazy` permite carregar componentes de forma assíncrona apenas quando necessário, melhorando o desempenho da aplicação.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Em Vue, a reatividade pode ser otimizada utilizando o `computed` ao invés de __________.",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "direct data mutation",
+                    "answers": [
+                      { "text": "direct data mutation" },
+                      { "text": "watchers" },
+                      { "text": "methods" },
+                      { "text": "v-bind" }
+                    ]
+                  },
+                  {
+                    "text": "Organize a sequência correta de otimização de desempenho nas tecnologias React, Angular e Vue:",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Usar React.memo para otimizar renderizações",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Utilizar ChangeDetectionStrategy.OnPush no Angular",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Usar v-bind:key no Vue para listas grandes",
+                        "pairId": 3
+                      },
+                      {
+                        "text": "Evitar reatividade desnecessária e mutação direta no Vue",
+                        "pairId": 4
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Lazy Loading e Code Splitting",
+                "questions": [
+                  {
+                    "text": "O que é Lazy Loading em frameworks modernos?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Carregar módulos ou componentes sob demanda, apenas quando necessários.",
+                    "answers": [
+                      {
+                        "text": "Carregar módulos ou componentes sob demanda, apenas quando necessários."
+                      },
+                      {
+                        "text": "Carregar todos os módulos da aplicação ao iniciar."
+                      },
+                      {
+                        "text": "Carregar os módulos em paralelo ao iniciar a aplicação."
+                      },
+                      {
+                        "text": "Pré-carregar todos os recursos da aplicação antes do uso."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O que é Code Splitting?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Dividir o código em partes menores para melhorar o desempenho.",
+                    "answers": [
+                      {
+                        "text": "Dividir o código em partes menores para melhorar o desempenho."
+                      },
+                      {
+                        "text": "Criar componentes complexos em uma única linha de código."
+                      },
+                      {
+                        "text": "Compactar todos os arquivos JavaScript em um único arquivo."
+                      },
+                      {
+                        "text": "Utilizar uma única estratégia de carregamento para todos os componentes."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O Lazy Loading é vantajoso quando precisamos carregar partes de uma aplicação apenas quando são necessárias, melhorando o desempenho.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual código está incorreto ao implementar Lazy Loading em React?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "React.lazy(() => import('./MyComponent'))",
+                    "answers": [
+                      { "text": "React.lazy(() => import('./MyComponent'))" },
+                      { "text": "React.lazy(() => import('./Component'))" },
+                      { "text": "React.lazy(() => require('./MyComponent'))" },
+                      {
+                        "text": "const MyComponent = React.lazy(() => import('./Component'))"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Em Angular, o Lazy Loading é configurado no roteamento usando:",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "loadChildren",
+                    "answers": [
+                      { "text": "loadChildren" },
+                      { "text": "lazyLoad" },
+                      { "text": "import" },
+                      { "text": "moduleLoad" }
+                    ]
+                  },
+                  {
+                    "text": "Assinale a sequência correta de passos para implementar o Code Splitting em uma aplicação React.",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Dividir os componentes em arquivos separados.",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Utilizar React.lazy para importar os componentes dinamicamente.",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Definir o componente que será carregado sob demanda.",
+                        "pairId": 3
+                      },
+                      {
+                        "text": "Utilizar Suspense para exibir um fallback enquanto o componente está sendo carregado.",
+                        "pairId": 4
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Em Vue, para utilizar Lazy Loading, você pode usar:",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "import()",
+                    "answers": [
+                      { "text": "import()" },
+                      { "text": "require()" },
+                      { "text": "lazyImport()" },
+                      { "text": "vueLazy()" }
+                    ]
+                  },
+                  {
+                    "text": "O Code Splitting pode melhorar a performance de uma aplicação, carregando somente o código necessário para a página atual.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O que significa a técnica de 'Chunking' no contexto de Code Splitting?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Dividir a aplicação em 'chunks' (pedaços), carregados sob demanda.",
+                    "answers": [
+                      {
+                        "text": "Dividir a aplicação em 'chunks' (pedaços), carregados sob demanda."
+                      },
+                      {
+                        "text": "Combinar arquivos de código em um único arquivo grande."
+                      },
+                      {
+                        "text": "Minificar o código para reduzir seu tamanho."
+                      },
+                      {
+                        "text": "Agrupar todos os módulos da aplicação em um único arquivo."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O 'Suspense' em React pode ser usado junto com Lazy Loading para mostrar um fallback enquanto o código está sendo carregado.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "stratégias de Performance para Renderização Rápida",
+                "questions": [
+                  {
+                    "text": "Qual técnica pode ser utilizada para evitar re-renderizações desnecessárias em React?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "React.memo",
+                    "answers": [
+                      { "text": "React.memo" },
+                      { "text": "useEffect" },
+                      { "text": "useContext" },
+                      { "text": "useState" }
+                    ]
+                  },
+                  {
+                    "text": "A técnica de 'Virtual DOM' melhora a performance ao minimizar o número de atualizações no DOM real.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O que o React faz quando um componente é envolvido com React.memo?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Memoriza o componente e evita re-renderizações quando as props não mudam.",
+                    "answers": [
+                      {
+                        "text": "Memoriza o componente e evita re-renderizações quando as props não mudam."
+                      },
+                      {
+                        "text": "Renderiza o componente toda vez que o estado mudar."
+                      },
+                      {
+                        "text": "O componente nunca será renderizado novamente."
+                      },
+                      { "text": "Memoriza apenas o estado do componente." }
+                    ]
+                  },
+                  {
+                    "text": "A função `shouldComponentUpdate` no React é usada para otimizar o desempenho, impedindo a renderização desnecessária de um componente quando as props ou o estado não mudam.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "A técnica de 'Code Splitting' permite carregar apenas a parte necessária do código JavaScript para cada página ou componente, melhorando o desempenho.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Associe cada estratégia de otimização à sua descrição:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "React.memo", "pairId": 1 },
+                      {
+                        "text": "Evita re-renderizações desnecessárias",
+                        "pairId": 1
+                      },
+                      { "text": "Code Splitting", "pairId": 2 },
+                      {
+                        "text": "Carrega apenas o código necessário para cada página",
+                        "pairId": 2
+                      },
+                      { "text": "Virtual DOM", "pairId": 3 },
+                      {
+                        "text": "Minimiza as atualizações do DOM real",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual código está incorreto ao utilizar React.memo para otimizar a renderização de um componente?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "React.memo(MyComponent)",
+                    "answers": [
+                      { "text": "React.memo(MyComponent)" },
+                      { "text": "memo(MyComponent)" },
+                      { "text": "React.memo(() => <MyComponent />)" },
+                      {
+                        "text": "React.memo(MyComponent, (prev, next) => prev === next)"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual a sequência correta de passos para otimizar a renderização de componentes em React?",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Utilizar React.memo para memorizar componentes",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Evitar funções inline e objetos no JSX",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Usar a técnica de Code Splitting para carregar apenas o necessário",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A técnica de 'Lazy Loading' em Vue pode ser usada para carregar componentes sob demanda, melhorando o desempenho da aplicação.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "A técnica de 'Debounce' é útil para otimizar as operações em tempo real, como digitação, evitando múltiplas chamadas à API.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "Como Gerenciar Estado de Forma Eficiente",
+                "questions": [
+                  {
+                    "text": "O uso de hooks como `useState` e `useReducer` no React ajuda a gerenciar o estado local dos componentes.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quando é melhor usar o `useReducer` ao invés de `useState` no React?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Quando o estado é complexo e precisa de várias transições.",
+                    "answers": [
+                      {
+                        "text": "Quando o estado é complexo e precisa de várias transições."
+                      },
+                      {
+                        "text": "Quando o estado é simples e muda com frequência."
+                      },
+                      { "text": "Quando a aplicação usa muitos componentes." },
+                      {
+                        "text": "Quando o estado é global e acessado por vários componentes."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Associe o tipo de gerenciador de estado à sua principal característica:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "useState", "pairId": 1 },
+                      {
+                        "text": "Gerencia o estado local do componente",
+                        "pairId": 1
+                      },
+                      { "text": "useReducer", "pairId": 2 },
+                      {
+                        "text": "Gerencia o estado complexo com várias transições",
+                        "pairId": 2
+                      },
+                      { "text": "Redux", "pairId": 3 },
+                      {
+                        "text": "Gerencia o estado global da aplicação",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual o erro no código abaixo ao tentar gerenciar o estado com o `useState`?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "setState(newState);",
+                    "answers": [
+                      { "text": "setState(newState);" },
+                      { "text": "const [state, setState] = useState();" },
+                      {
+                        "text": "const [state, setState] = useState(initialState);"
+                      },
+                      { "text": "setState({ key: value });" }
+                    ]
+                  },
+                  {
+                    "text": "Qual a sequência correta para gerenciar o estado em React usando `useState`?",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Declarar a variável de estado com `useState`",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Definir a função para atualizar o estado",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Usar o estado na renderização do componente",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A declaração `const [state, setState] = useState(initialState);` é usada para definir o estado de um componente no React.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quando utilizar o `Context API` em React para gerenciar estado global?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Quando o estado precisa ser compartilhado entre vários componentes.",
+                    "answers": [
+                      {
+                        "text": "Quando o estado precisa ser compartilhado entre vários componentes."
+                      },
+                      { "text": "Quando o estado muda frequentemente." },
+                      { "text": "Quando o estado é local e simples." },
+                      {
+                        "text": "Quando o estado deve ser persistido entre sessões."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A principal vantagem do `useReducer` sobre `useState` é que ele pode ser mais fácil de debugar quando o estado depende de ações complexas.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "A função `dispatch` no `useReducer` é responsável por alterar o estado diretamente, sem necessidade de uma função de atualização separada.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Falso",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O que deve ser feito para otimizar o gerenciamento de estado em uma aplicação grande e complexa?",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "Usar uma abordagem centralizada de gerenciamento de estado, como Redux ou Context API.",
+                    "answers": [
+                      {
+                        "text": "Usar uma abordagem centralizada de gerenciamento de estado, como Redux ou Context API."
+                      },
+                      {
+                        "text": "Dividir o estado em estados menores e independentes."
+                      },
+                      { "text": "Evitar a utilização de hooks de estado." },
+                      {
+                        "text": "Armazenar o estado no localStorage para persistência."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Uso de Webpack e Vite para Otimização de Builds",
+                "questions": [
+                  {
+                    "text": "O Webpack é uma ferramenta de bundling que agrupa os arquivos JavaScript e outros recursos em um único arquivo ou em vários arquivos de forma eficiente.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quais são as principais diferenças entre Webpack e Vite em relação ao processo de build?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Vite tem uma inicialização mais rápida e usa ES modules nativos no browser.",
+                    "answers": [
+                      {
+                        "text": "Vite tem uma inicialização mais rápida e usa ES modules nativos no browser."
+                      },
+                      {
+                        "text": "Webpack usa ES modules nativos no browser e Vite precisa de um servidor de build."
+                      },
+                      {
+                        "text": "Webpack tem inicialização mais rápida e Vite usa bundling como o Webpack."
+                      },
+                      {
+                        "text": "Ambas as ferramentas têm a mesma performance de build, mas Vite é mais adequado para grandes aplicações."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Associe a ferramenta de otimização ao seu benefício principal:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "Webpack", "pairId": 1 },
+                      {
+                        "text": "Permite otimizar e agrupar arquivos para produção",
+                        "pairId": 1
+                      },
+                      { "text": "Vite", "pairId": 2 },
+                      {
+                        "text": "Aproveita os ES modules para builds mais rápidos em desenvolvimento",
+                        "pairId": 2
+                      },
+                      { "text": "Terser", "pairId": 3 },
+                      {
+                        "text": "Minimiza o código JavaScript para reduzir o tamanho do bundle",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual o erro no código abaixo ao tentar configurar o Webpack para otimização do build?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "optimization: { minimize: true }",
+                    "answers": [
+                      { "text": "optimization: { minimize: true }" },
+                      { "text": "optimization: { minimize: false }" },
+                      { "text": "webpack: { optimization: true }" },
+                      { "text": "webpack: { minimize: true }" }
+                    ]
+                  },
+                  {
+                    "text": "Qual a sequência correta para configurar a otimização de build no Webpack?",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Instalar os loaders e plugins necessários",
+                        "pairId": 1
+                      },
+                      {
+                        "text": "Configurar a propriedade 'optimization' no arquivo de configuração",
+                        "pairId": 2
+                      },
+                      {
+                        "text": "Definir regras de minimização e otimização dos arquivos",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A utilização de `tree shaking` em ferramentas como Webpack ajuda a eliminar o código não utilizado, resultando em bundles menores.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quais vantagens o Vite oferece em relação ao Webpack durante o desenvolvimento?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Vite proporciona recarregamento rápido e inicialização instantânea, aproveitando os ES modules.",
+                    "answers": [
+                      {
+                        "text": "Vite proporciona recarregamento rápido e inicialização instantânea, aproveitando os ES modules."
+                      },
+                      {
+                        "text": "Vite tem maior suporte a plugins de build do que o Webpack."
+                      },
+                      {
+                        "text": "Webpack é mais rápido para grandes projetos, mas Vite oferece melhor compatibilidade com frameworks."
+                      },
+                      {
+                        "text": "Vite oferece suporte superior a arquivos CSS em comparação com Webpack."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O Vite utiliza o conceito de HMR (Hot Module Replacement) para permitir atualizações rápidas durante o desenvolvimento, sem a necessidade de recarregar a página inteira.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O que deve ser feito para otimizar o tempo de build utilizando o Webpack?",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "Utilizar o cache de compilação e configurar o modo 'production'.",
+                    "answers": [
+                      {
+                        "text": "Utilizar o cache de compilação e configurar o modo 'production'."
+                      },
+                      {
+                        "text": "Dividir o código em múltiplos arquivos para reduzir o tempo de build."
+                      },
+                      {
+                        "text": "Desabilitar todos os plugins de build durante a produção."
+                      },
+                      {
+                        "text": "Habilitar o modo 'development' para otimizar o tempo de build."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A principal diferença entre o modo 'development' e 'production' no Webpack é que, no modo 'production', o código é otimizado, minimizado e é habilitado o 'tree shaking'.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  }
+                ]
+              },
+              {
+                "name": "Acessibilidade e SEO em Frameworks",
+                "questions": [
+                  {
+                    "text": "Acessibilidade é a prática de tornar o conteúdo da web disponível para todas as pessoas, incluindo aquelas com deficiências.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quais das seguintes práticas são recomendadas para melhorar a acessibilidade em uma página web?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Usar texto alternativo em imagens e garantir contraste suficiente entre o texto e o fundo.",
+                    "answers": [
+                      {
+                        "text": "Usar texto alternativo em imagens e garantir contraste suficiente entre o texto e o fundo."
+                      },
+                      {
+                        "text": "Evitar usar tags semânticas como <header> e <footer>."
+                      },
+                      {
+                        "text": "Desabilitar o teclado de navegação para facilitar a navegação com o mouse."
+                      },
+                      {
+                        "text": "Limitar o uso de cores para distinguir elementos importantes."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Associe o recurso à sua descrição para acessibilidade:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "ARIA roles", "pairId": 1 },
+                      {
+                        "text": "Define a função de um elemento na página para leitores de tela",
+                        "pairId": 1
+                      },
+                      { "text": "Contraste de cores", "pairId": 2 },
+                      {
+                        "text": "Aumenta a legibilidade do conteúdo para usuários com deficiência visual",
+                        "pairId": 2
+                      },
+                      { "text": "Teclado de navegação", "pairId": 3 },
+                      {
+                        "text": "Permite que usuários naveguem pela página sem usar o mouse",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual o erro no código abaixo ao tentar melhorar a acessibilidade de um formulário?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "<label for='email'>Email</label> deve ser associado ao campo <input id='email' type='email' />",
+                    "answers": [
+                      {
+                        "text": "<label for='email'>Email</label> deve ser associado ao campo <input id='email' type='email' />"
+                      },
+                      {
+                        "text": "<input id='email' type='email' /> deve ter um texto alternativo associado ao campo"
+                      },
+                      { "text": "<form> deve ter um atributo role='form'" },
+                      {
+                        "text": "<label>Email</label> deve ser escrito com um tamanho maior de fonte"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual a sequência correta para melhorar a SEO de uma página?",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      {
+                        "text": "Adicionar meta tags de título e descrição",
+                        "pairId": 1
+                      },
+                      { "text": "Usar URLs amigáveis e legíveis", "pairId": 2 },
+                      {
+                        "text": "Criar conteúdo relevante e utilizar palavras-chave",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "SEO (Search Engine Optimization) é o processo de otimização de uma página para melhorar seu posicionamento nos motores de busca.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O que é uma tag <meta> no HTML e qual sua importância para SEO?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "A tag <meta> fornece informações sobre a página que ajudam os motores de busca a indexar corretamente.",
+                    "answers": [
+                      {
+                        "text": "A tag <meta> fornece informações sobre a página que ajudam os motores de busca a indexar corretamente."
+                      },
+                      {
+                        "text": "A tag <meta> define as regras de formatação de fontes e estilos no CSS."
+                      },
+                      {
+                        "text": "A tag <meta> é usada para otimizar imagens para SEO."
+                      },
+                      {
+                        "text": "A tag <meta> ajuda a melhorar a experiência do usuário, ajustando o conteúdo para telas pequenas."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "A utilização de <header> e <footer> são importantes para acessibilidade, pois fornecem estruturas semânticas que facilitam a navegação para leitores de tela.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "A acessibilidade e SEO são importantes apenas para pessoas com deficiência visual.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Falso",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "O que falta no código abaixo para otimizar a acessibilidade de uma tabela?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "Adicionar <th> para as células de cabeçalho da tabela.",
+                    "answers": [
+                      {
+                        "text": "Adicionar <th> para as células de cabeçalho da tabela."
+                      },
+                      { "text": "Substituir <table> por <div>." },
+                      {
+                        "text": "Adicionar aria-label para cada célula de dados."
+                      },
+                      {
+                        "text": "Adicionar a tag <footer> para melhorar a navegação."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ferramentas e Extensões para Depuração e Performance",
+                "questions": [
+                  {
+                    "text": "O React DevTools é uma ferramenta essencial para depuração de aplicativos React, permitindo inspecionar o estado dos componentes e seus hooks.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quais das seguintes ferramentas são usadas para analisar o desempenho de um site ou aplicativo web?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Google Lighthouse, React DevTools e Vue Devtools.",
+                    "answers": [
+                      {
+                        "text": "Google Lighthouse, React DevTools e Vue Devtools."
+                      },
+                      { "text": "Postman e Jest." },
+                      { "text": "Webpack e Babel." },
+                      { "text": "PHPMyAdmin e Firebase." }
+                    ]
+                  },
+                  {
+                    "text": "Associe a ferramenta à sua principal funcionalidade:",
+                    "type": "MATCH_PAIRS",
+                    "answers": [
+                      { "text": "React DevTools", "pairId": 1 },
+                      { "text": "Depuração de componentes React", "pairId": 1 },
+                      { "text": "Vue Devtools", "pairId": 2 },
+                      { "text": "Depuração de componentes Vue", "pairId": 2 },
+                      { "text": "Google Lighthouse", "pairId": 3 },
+                      {
+                        "text": "Análise de desempenho e acessibilidade",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual o erro no código abaixo ao tentar usar o React DevTools para depurar um componente?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "O componente não foi corretamente envolvido com o contexto do React.",
+                    "answers": [
+                      {
+                        "text": "O componente não foi corretamente envolvido com o contexto do React."
+                      },
+                      {
+                        "text": "Não foi importado o React DevTools corretamente."
+                      },
+                      {
+                        "text": "O React DevTools não é compatível com versões antigas do React."
+                      },
+                      {
+                        "text": "O estado do componente foi modificado diretamente no código."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Qual a sequência correta para usar o Google Lighthouse e avaliar a performance de um site?",
+                    "type": "ORDER_CORRECTLY",
+                    "answers": [
+                      { "text": "Abrir o DevTools no navegador", "pairId": 1 },
+                      { "text": "Ir para a aba 'Lighthouse'", "pairId": 2 },
+                      {
+                        "text": "Gerar o relatório de performance",
+                        "pairId": 3
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O Google Lighthouse é uma ferramenta automatizada de código aberto para melhorar a qualidade das páginas web, mas não oferece dados sobre acessibilidade.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Falso",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Quais das seguintes práticas podem ser analisadas usando o Google Lighthouse?",
+                    "type": "MULTIPLE_CHOICE",
+                    "correctAnswer": "Performance, acessibilidade, SEO e melhores práticas.",
+                    "answers": [
+                      {
+                        "text": "Performance, acessibilidade, SEO e melhores práticas."
+                      },
+                      { "text": "Somente performance e SEO." },
+                      { "text": "Somente acessibilidade." },
+                      { "text": "Somente SEO e segurança." }
+                    ]
+                  },
+                  {
+                    "text": "O que pode ser melhorado ao usar o React Profiler para medir o desempenho de um aplicativo React?",
+                    "type": "COMPLETE_THE_SENTENCE",
+                    "correctAnswer": "Identificar os componentes que estão demorando mais para renderizar.",
+                    "answers": [
+                      {
+                        "text": "Identificar os componentes que estão demorando mais para renderizar."
+                      },
+                      { "text": "Monitorar o uso de hooks em tempo real." },
+                      { "text": "Verificar erros no código de componentes." },
+                      {
+                        "text": "Avaliar a compatibilidade do React com o Node.js."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "O uso do React Profiler ajuda a entender melhor o comportamento de renderização e otimizar a performance de um aplicativo React.",
+                    "type": "TRUE_FALSE",
+                    "correctAnswer": "Verdadeiro",
+                    "answers": [{ "text": "Verdadeiro" }, { "text": "Falso" }]
+                  },
+                  {
+                    "text": "Qual o erro no código abaixo ao tentar melhorar o desempenho de um aplicativo React usando o React.memo?",
+                    "type": "IDENTIFY_ERROR",
+                    "correctAnswer": "O componente não foi envolvido corretamente com React.memo.",
+                    "answers": [
+                      {
+                        "text": "O componente não foi envolvido corretamente com React.memo."
+                      },
+                      {
+                        "text": "React.memo não é compatível com componentes funcionais."
+                      },
+                      {
+                        "text": "React.memo não pode ser usado com props dinâmicas."
+                      },
+                      {
+                        "text": "O React DevTools não detecta componentes otimizados com React.memo."
                       }
                     ]
                   }

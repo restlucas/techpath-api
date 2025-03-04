@@ -36,7 +36,7 @@ CREATE TABLE `Trail` (
     `id` VARCHAR(191) NOT NULL,
     `slug` VARCHAR(191) NOT NULL,
     `name` VARCHAR(191) NOT NULL,
-    `description` VARCHAR(191) NULL,
+    `description` TEXT NULL,
     `tags` VARCHAR(191) NOT NULL,
 
     UNIQUE INDEX `Trail_id_key`(`id`),
@@ -47,7 +47,7 @@ CREATE TABLE `Trail` (
 CREATE TABLE `Module` (
     `id` VARCHAR(191) NOT NULL,
     `name` VARCHAR(191) NOT NULL,
-    `description` VARCHAR(191) NULL,
+    `description` TEXT NULL,
     `trailId` VARCHAR(191) NOT NULL,
 
     UNIQUE INDEX `Module_id_key`(`id`),
@@ -59,7 +59,7 @@ CREATE TABLE `Topic` (
     `id` VARCHAR(191) NOT NULL,
     `slug` VARCHAR(191) NOT NULL,
     `name` VARCHAR(191) NOT NULL,
-    `description` VARCHAR(191) NULL,
+    `description` TEXT NULL,
     `moduleId` VARCHAR(191) NOT NULL,
 
     UNIQUE INDEX `Topic_id_slug_key`(`id`, `slug`),
@@ -80,7 +80,7 @@ CREATE TABLE `Lesson` (
 CREATE TABLE `Question` (
     `id` VARCHAR(191) NOT NULL,
     `text` VARCHAR(191) NOT NULL,
-    `type` ENUM('MULTIPLE_CHOICE', 'MATCH_PAIRS', 'ORDER_CORRECTLY', 'IDENTIFY_ERROR', 'FILL_IN_THE_BLANK', 'TRUE_FALSE', 'COMPLETE_THE_SENTENCE', 'RELATE_CONCEPTS') NOT NULL,
+    `type` ENUM('MULTIPLE_CHOICE', 'MATCH_PAIRS', 'ORDER_CORRECTLY', 'IDENTIFY_ERROR', 'TRUE_FALSE', 'COMPLETE_THE_SENTENCE') NOT NULL,
     `xp` INTEGER NOT NULL,
     `lessonId` VARCHAR(191) NOT NULL,
     `correctAnswer` VARCHAR(191) NULL,
@@ -120,7 +120,48 @@ CREATE TABLE `UserModuleProgress` (
     `unlocked` BOOLEAN NOT NULL DEFAULT false,
     `completed` BOOLEAN NOT NULL DEFAULT false,
 
-    UNIQUE INDEX `UserModuleProgress_id_userId_moduleId_key`(`id`, `userId`, `moduleId`),
+    UNIQUE INDEX `UserModuleProgress_userId_moduleId_key`(`userId`, `moduleId`),
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `Leaderboard` (
+    `id` VARCHAR(191) NOT NULL,
+    `userId` VARCHAR(191) NOT NULL,
+    `xpEarned` INTEGER NOT NULL DEFAULT 0,
+    `weekStart` DATETIME(3) NOT NULL,
+
+    UNIQUE INDEX `Leaderboard_userId_key`(`userId`),
+    INDEX `Leaderboard_weekStart_idx`(`weekStart`),
+    UNIQUE INDEX `Leaderboard_userId_weekStart_key`(`userId`, `weekStart`),
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `Mission` (
+    `id` VARCHAR(191) NOT NULL,
+    `title` VARCHAR(191) NOT NULL,
+    `description` VARCHAR(191) NOT NULL,
+    `goalType` ENUM('COMPLETE_LESSONS', 'PERFECT_SCORE_LESSONS', 'WEEKLY_STREAK') NOT NULL,
+    `goalValue` INTEGER NOT NULL,
+    `rewardXp` INTEGER NOT NULL,
+    `frequency` ENUM('DAILY', 'WEEKLY') NOT NULL,
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `UserMission` (
+    `id` VARCHAR(191) NOT NULL,
+    `userId` VARCHAR(191) NOT NULL,
+    `missionId` VARCHAR(191) NOT NULL,
+    `progress` INTEGER NOT NULL DEFAULT 0,
+    `completed` BOOLEAN NOT NULL DEFAULT false,
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL,
+
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -153,3 +194,12 @@ ALTER TABLE `UserModuleProgress` ADD CONSTRAINT `UserModuleProgress_userId_fkey`
 
 -- AddForeignKey
 ALTER TABLE `UserModuleProgress` ADD CONSTRAINT `UserModuleProgress_moduleId_fkey` FOREIGN KEY (`moduleId`) REFERENCES `Module`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `Leaderboard` ADD CONSTRAINT `Leaderboard_userId_fkey` FOREIGN KEY (`userId`) REFERENCES `User`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `UserMission` ADD CONSTRAINT `UserMission_userId_fkey` FOREIGN KEY (`userId`) REFERENCES `User`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `UserMission` ADD CONSTRAINT `UserMission_missionId_fkey` FOREIGN KEY (`missionId`) REFERENCES `Mission`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
