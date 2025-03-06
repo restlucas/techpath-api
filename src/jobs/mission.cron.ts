@@ -4,48 +4,76 @@ import prisma from "../lib/prisma";
 async function resetDailyMissions() {
   console.log("⏳ Resetando missões diárias...");
 
+  // Exclui missões diárias não concluídas
+  await prisma.userMission.deleteMany({
+    where: {
+      mission: { frequency: "DAILY" },
+      completed: false,
+    },
+  });
+
   const users = await prisma.user.findMany();
   const dailyMissions = await prisma.mission.findMany({
     where: { frequency: "DAILY" },
   });
 
-  for (const user of users) {
-    for (const mission of dailyMissions) {
-      await prisma.userMission.create({
+  if (users.length === 0 || dailyMissions.length === 0) {
+    console.log("⚠️ Nenhum usuário ou missão diária encontrada.");
+    return;
+  }
+
+  const tasks = users.flatMap((user) =>
+    dailyMissions.map((mission) =>
+      prisma.userMission.create({
         data: {
           userId: user.id,
           missionId: mission.id,
           progress: 0,
           completed: false,
         },
-      });
-    }
-  }
+      })
+    )
+  );
 
+  await Promise.all(tasks);
   console.log("✅ Missões diárias redefinidas com sucesso!");
 }
 
 async function resetWeeklyMissions() {
   console.log("⏳ Resetando missões semanais...");
 
+  // Exclui missões semanais não concluídas
+  await prisma.userMission.deleteMany({
+    where: {
+      mission: { frequency: "WEEKLY" },
+      completed: false,
+    },
+  });
+
   const users = await prisma.user.findMany();
   const weeklyMissions = await prisma.mission.findMany({
     where: { frequency: "WEEKLY" },
   });
 
-  for (const user of users) {
-    for (const mission of weeklyMissions) {
-      await prisma.userMission.create({
+  if (users.length === 0 || weeklyMissions.length === 0) {
+    console.log("⚠️ Nenhum usuário ou missão semanal encontrada.");
+    return;
+  }
+
+  const tasks = users.flatMap((user) =>
+    weeklyMissions.map((mission) =>
+      prisma.userMission.create({
         data: {
           userId: user.id,
           missionId: mission.id,
           progress: 0,
           completed: false,
         },
-      });
-    }
-  }
+      })
+    )
+  );
 
+  await Promise.all(tasks);
   console.log("✅ Missões semanais redefinidas com sucesso!");
 }
 

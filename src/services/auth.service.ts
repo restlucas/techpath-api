@@ -51,7 +51,27 @@ const authService = {
           });
         }
       }
+
+      const missions = await prisma.mission.findMany();
+
+      for (const index in missions) {
+        await prisma.userMission.create({
+          data: {
+            userId: user.id,
+            missionId: missions[index].id,
+          },
+        });
+      }
     }
+
+    const followingIds = await prisma.userFollowing.findMany({
+      where: {
+        followerId: user.id,
+      },
+      select: {
+        followedId: true,
+      },
+    });
 
     await prisma.account.upsert({
       where: { providerAccountId },
@@ -64,7 +84,10 @@ const authService = {
     });
 
     return {
-      user,
+      user: {
+        ...user,
+        following: [...followingIds.map((following) => following.followedId)],
+      },
     };
   },
 };

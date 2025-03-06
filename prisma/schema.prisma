@@ -26,7 +26,10 @@ model User {
   leaderboard       Leaderboard?
   userMission      UserMission[]
 
-  @@unique([id, email])
+  following   UserFollowing[] @relation("Following")
+  followers   UserFollowing[] @relation("Follower")
+
+  @@unique([id, username, email])
 }
 
 model Account {
@@ -203,3 +206,14 @@ model UserMission {
   user    User   @relation(fields: [userId], references: [id])
   mission Mission @relation(fields: [missionId], references: [id])
 } 
+
+model UserFollowing {
+  id             String @id @default(cuid())
+  followerId     String
+  followedId     String 
+  
+  follower       User @relation("Following", fields: [followerId], references: [id])
+  followed       User @relation("Follower", fields: [followedId], references: [id])
+
+  @@unique([followerId, followedId]) 
+}

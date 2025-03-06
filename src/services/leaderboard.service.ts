@@ -9,7 +9,9 @@ const leaderboardService = {
       where: { weekStart },
       orderBy: { xpEarned: "desc" },
       take: 10,
-      include: { user: { select: { name: true, image: true } } },
+      include: {
+        user: { select: { name: true, image: true, username: true } },
+      },
     });
 
     return leaderboard;

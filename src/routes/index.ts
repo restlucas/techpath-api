@@ -6,12 +6,13 @@ import { authMiddleware } from "../middlewares/auth.middleware";
 import lessonRoutes from "./lesson.routes";
 import leaderboardRoutes from "./leaderboard";
 import missionRoutes from "./mission.routes";
+import { updateMissionsProgress } from "../utils/updateMission";
 
 const router = Router();
 
-router.use("/user", userRoutes);
 router.use("/auth", authRoutes);
-router.use("/trail", trailRoutes);
+router.use("/trail", authMiddleware, trailRoutes);
+router.use("/user", userRoutes);
 router.use("/lesson", authMiddleware, lessonRoutes);
 router.use("/leaderboard", authMiddleware, leaderboardRoutes);
 router.use("/mission", authMiddleware, missionRoutes);

@@ -73,12 +73,6 @@ const lessonService = {
     const now = new Date();
     const weekStart = startOfWeek(now);
 
-    await prisma.leaderboard.upsert({
-      where: { userId_weekStart: { userId, weekStart } },
-      update: { xpEarned: { increment: totalXpEarned } },
-      create: { userId, weekStart, xpEarned: totalXpEarned },
-    });
-
     // 🔹 Obter informações do usuário (XP, streak e última atividade)
     const userInfo = await prisma.user.findUniqueOrThrow({
       where: { id: userId },
@@ -172,7 +166,19 @@ const lessonService = {
       }
     }
 
-    await updateMissionsProgress(userId);
+    const totalXpGainedByMissions = await updateMissionsProgress(
+      userId,
+      lessonId,
+      totalXpEarned
+    );
+
+    const totalXpGained = totalXpEarned + totalXpGainedByMissions;
+
+    await prisma.leaderboard.upsert({
+      where: { userId_weekStart: { userId, weekStart } },
+      update: { xpEarned: { increment: totalXpGained } },
+      create: { userId, weekStart, xpEarned: totalXpGained },
+    });
 
     return userLessonProgress;
   },
