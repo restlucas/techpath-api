@@ -1,4 +1,5 @@
 import prisma from "../lib/prisma";
+import { createUserMissions } from "../utils/createUserMissions";
 
 type SignInProps = {
   name: string;
@@ -52,16 +53,7 @@ const authService = {
         }
       }
 
-      const missions = await prisma.mission.findMany();
-
-      for (const index in missions) {
-        await prisma.userMission.create({
-          data: {
-            userId: user.id,
-            missionId: missions[index].id,
-          },
-        });
-      }
+      await createUserMissions(user.id);
     }
 
     const followingIds = await prisma.userFollowing.findMany({

@@ -2,6 +2,18 @@ import { Request, Response } from "express";
 import responseHandler from "../utils/responseHandler";
 import userService from "../services/user.service";
 
+export const getUser = async (req: Request, res: Response) => {
+  const userId = req.headers["x-user-id"] as string;
+
+  const userResponse = await userService.getUserData(userId);
+
+  responseHandler.success(
+    res,
+    "User profile retrieved successfully",
+    userResponse
+  );
+};
+
 export const getUserProfile = async (
   req: Request,
   res: Response

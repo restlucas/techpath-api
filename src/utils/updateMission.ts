@@ -6,9 +6,6 @@ export async function updateMissionsProgress(
   totalXpEarned: number
 ): Promise<number> {
   console.log("🔄 Atualizando progresso das missões...");
-  console.log("userId: ", userId);
-  console.log("lessonId: ", lessonId);
-  console.log("totalXpEarned: ", totalXpEarned);
 
   const userMissions = await prisma.userMission.findMany({
     where: { userId, completed: false },
@@ -22,8 +19,6 @@ export async function updateMissionsProgress(
     const missionXp = mission.rewardXp;
     let newProgress = userMission.progress;
     let isCompleted = false;
-
-    console.log("missionXp: ", missionXp);
 
     switch (mission.goalType) {
       case "PERFECT_SCORE_LESSONS":
@@ -76,6 +71,5 @@ export async function updateMissionsProgress(
     console.log(`🎉 Usuário ganhou ${totalXpGained} XP!`);
   }
 
-  console.log(totalXpGained);
   return totalXpGained;
 }

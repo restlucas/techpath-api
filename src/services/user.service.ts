@@ -1,6 +1,38 @@
 import prisma from "../lib/prisma";
 
 const userService = {
+  async getUserData(userId: string) {
+    const user = await prisma.user.findFirst({
+      where: {
+        id: userId,
+      },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        username: true,
+        image: true,
+        totalXp: true,
+        streak: true,
+        createdAt: true,
+      },
+    });
+
+    const followingIds = await prisma.userFollowing.findMany({
+      where: {
+        followerId: userId,
+      },
+      select: {
+        followedId: true,
+      },
+    });
+
+    return {
+      ...user,
+      following: [...followingIds.map((following) => following.followedId)],
+    };
+  },
+
   async getByUsername(username: string) {
     const user = await prisma.user.findFirst({
       where: {

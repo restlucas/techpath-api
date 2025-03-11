@@ -12,7 +12,7 @@ const router = Router();
 
 router.use("/auth", authRoutes);
 router.use("/trail", authMiddleware, trailRoutes);
-router.use("/user", userRoutes);
+router.use("/user", authMiddleware, userRoutes);
 router.use("/lesson", authMiddleware, lessonRoutes);
 router.use("/leaderboard", authMiddleware, leaderboardRoutes);
 router.use("/mission", authMiddleware, missionRoutes);

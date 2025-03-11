@@ -1,7 +1,7 @@
 import cron from "node-cron";
 import prisma from "../lib/prisma";
 
-async function resetDailyMissions() {
+export async function resetDailyMissions() {
   console.log("⏳ Resetando missões diárias...");
 
   // Exclui missões diárias não concluídas
@@ -39,7 +39,7 @@ async function resetDailyMissions() {
   console.log("✅ Missões diárias redefinidas com sucesso!");
 }
 
-async function resetWeeklyMissions() {
+export async function resetWeeklyMissions() {
   console.log("⏳ Resetando missões semanais...");
 
   // Exclui missões semanais não concluídas

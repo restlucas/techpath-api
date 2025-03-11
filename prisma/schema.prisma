@@ -97,12 +97,12 @@ model Lesson {
 
 model Question {
   id                  String @id @default(cuid())
-  text                String
+  text                String @db.Text
   type                QuestionType
   xp                  Int
   lessonId            String
 
-  correctAnswer       String? 
+  correctAnswer       String? @db.Text
 
   answers             Answer[] 
 
@@ -112,7 +112,7 @@ model Question {
 
 model Answer {
   id                  String @id @default(cuid())
-  text                String        
+  text                String @db.Text         
   questionId          String
 
   order               Int?           

@@ -12,7 +12,7 @@ CREATE TABLE `User` (
     `updatedAt` DATETIME(3) NOT NULL,
 
     UNIQUE INDEX `User_email_key`(`email`),
-    UNIQUE INDEX `User_id_email_key`(`id`, `email`),
+    UNIQUE INDEX `User_id_username_email_key`(`id`, `username`, `email`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -79,11 +79,11 @@ CREATE TABLE `Lesson` (
 -- CreateTable
 CREATE TABLE `Question` (
     `id` VARCHAR(191) NOT NULL,
-    `text` VARCHAR(191) NOT NULL,
+    `text` TEXT NOT NULL,
     `type` ENUM('MULTIPLE_CHOICE', 'MATCH_PAIRS', 'ORDER_CORRECTLY', 'IDENTIFY_ERROR', 'TRUE_FALSE', 'COMPLETE_THE_SENTENCE') NOT NULL,
     `xp` INTEGER NOT NULL,
     `lessonId` VARCHAR(191) NOT NULL,
-    `correctAnswer` VARCHAR(191) NULL,
+    `correctAnswer` TEXT NULL,
 
     UNIQUE INDEX `Question_id_key`(`id`),
     PRIMARY KEY (`id`)
@@ -92,7 +92,7 @@ CREATE TABLE `Question` (
 -- CreateTable
 CREATE TABLE `Answer` (
     `id` VARCHAR(191) NOT NULL,
-    `text` VARCHAR(191) NOT NULL,
+    `text` TEXT NOT NULL,
     `questionId` VARCHAR(191) NOT NULL,
     `order` INTEGER NULL,
     `pairId` INTEGER NULL,
@@ -165,6 +165,16 @@ CREATE TABLE `UserMission` (
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
+-- CreateTable
+CREATE TABLE `UserFollowing` (
+    `id` VARCHAR(191) NOT NULL,
+    `followerId` VARCHAR(191) NOT NULL,
+    `followedId` VARCHAR(191) NOT NULL,
+
+    UNIQUE INDEX `UserFollowing_followerId_followedId_key`(`followerId`, `followedId`),
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 -- AddForeignKey
 ALTER TABLE `Account` ADD CONSTRAINT `Account_userId_fkey` FOREIGN KEY (`userId`) REFERENCES `User`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 
@@ -203,3 +213,9 @@ ALTER TABLE `UserMission` ADD CONSTRAINT `UserMission_userId_fkey` FOREIGN KEY (
 
 -- AddForeignKey
 ALTER TABLE `UserMission` ADD CONSTRAINT `UserMission_missionId_fkey` FOREIGN KEY (`missionId`) REFERENCES `Mission`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `UserFollowing` ADD CONSTRAINT `UserFollowing_followerId_fkey` FOREIGN KEY (`followerId`) REFERENCES `User`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `UserFollowing` ADD CONSTRAINT `UserFollowing_followedId_fkey` FOREIGN KEY (`followedId`) REFERENCES `User`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
