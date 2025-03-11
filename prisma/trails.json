@@ -40,7 +40,7 @@
                     ]
                   },
                   {
-                    "text": "Qual tag é usada para um parágrafo??",
+                    "text": "Qual tag é usada para um parágrafo?",
                     "type": "MULTIPLE_CHOICE",
                     "correctAnswer": "p",
                     "answers": [
