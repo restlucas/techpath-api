@@ -1,0 +1,21 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const user_routes_1 = __importDefault(require("./user.routes"));
+const auth_routes_1 = __importDefault(require("./auth.routes"));
+const trail_routes_1 = __importDefault(require("./trail.routes"));
+const auth_middleware_1 = require("../middlewares/auth.middleware");
+const lesson_routes_1 = __importDefault(require("./lesson.routes"));
+const leaderboard_1 = __importDefault(require("./leaderboard"));
+const mission_routes_1 = __importDefault(require("./mission.routes"));
+const router = (0, express_1.Router)();
+router.use("/auth", auth_routes_1.default);
+router.use("/trail", auth_middleware_1.authMiddleware, trail_routes_1.default);
+router.use("/user", auth_middleware_1.authMiddleware, user_routes_1.default);
+router.use("/lesson", auth_middleware_1.authMiddleware, lesson_routes_1.default);
+router.use("/leaderboard", auth_middleware_1.authMiddleware, leaderboard_1.default);
+router.use("/mission", auth_middleware_1.authMiddleware, mission_routes_1.default);
+exports.default = router;
