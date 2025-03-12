@@ -1,26 +1,27 @@
-import { NextFunction, Request, Response } from "express";
+import { Request, Response } from "express";
 import responseHandler from "../utils/responseHandler";
 import trailService from "../services/trail.service";
 
 export const listAll = async (
   req: Request,
-  res: Response,
-  next: NextFunction
+  res: Response
 ): Promise<void | any> => {
   try {
     const trailsResponse = await trailService.getAll();
-    console.log("✅ Trails Response:", trailsResponse);
-
     throw new Error("🔥 Teste de erro no Railway!");
+
+    console.error("🚀 API iniciou corretamente!");
+    process.stdout.write("✅ Log para stdout\n");
+    process.stderr.write("❌ Log para stderr\n");
 
     responseHandler.success(
       res,
-      "Trails retrieved successfully",
+      "Trailx retrieved successfully",
       trailsResponse
     );
   } catch (error) {
     console.error("❌ Erro capturado:", error);
-    next(error); // Isso garante que o erro seja repassado corretamente ao Express
+    process.exit(1);
   }
 };
 
