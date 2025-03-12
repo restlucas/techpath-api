@@ -8,6 +8,8 @@ export const listAll = async (
 ): Promise<void | any> => {
   const trailsResponse = await trailService.getAll();
 
+  console.log(trailsResponse);
+
   responseHandler.success(res, "Trails retrieved successfully", trailsResponse);
 };
 
