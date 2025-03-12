@@ -5,7 +5,7 @@ import "./jobs/mission.cron";
 dotenv.config();
 
 const PORT = Number(process.env.PORT) || 3300;
-const HOST = "localhost";
+const HOST = process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost";
 
 const startServer = () => {
   try {
