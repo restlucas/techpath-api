@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "ts-node src/server.ts",
     "build": "tsc",
-    "start": "node dist/app.js",
+    "start": "node dist/src/app.js",
     "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
