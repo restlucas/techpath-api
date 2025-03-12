@@ -11,7 +11,11 @@ function startOfWeek(date) {
     // Ajusta a data para o início da semana em UTC
     utcDate.setUTCDate(utcDate.getUTCDate() - diff);
     utcDate.setUTCHours(0, 0, 0, 0); // Reseta para meia-noite (UTC)
-    // Ajusta a data para o fuso horário desejado
-    utcDate.setHours(utcDate.getHours() + 3); // Ajuste do fuso horário (em horas)
+    // Detecta o fuso horário do servidor em relação ao UTC
+    const serverOffset = new Date().getTimezoneOffset() / 60; // Retorna o offset em horas (-180 para UTC-3, por exemplo)
+    // Se o fuso horário do servidor não for UTC-3 (Brasil), ajusta para UTC-3
+    if (serverOffset !== -3) {
+        utcDate.setHours(utcDate.getHours() + 3); // Ajuste do fuso horário para UTC-3
+    }
     return utcDate; // Retorna a data ajustada para o fuso horário desejado
 }

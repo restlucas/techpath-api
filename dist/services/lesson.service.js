@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const prisma_1 = __importDefault(require("../lib/prisma"));
 const weekDate_1 = require("../utils/weekDate");
 const updateMission_1 = require("../utils/updateMission");
+const adjustNowDate_1 = require("../utils/adjustNowDate");
 const lessonService = {
     getLesson(topicSlug, userId) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -69,7 +70,7 @@ const lessonService = {
     },
     addResult(_a) {
         return __awaiter(this, arguments, void 0, function* ({ lessonId, userId, completed, totalXpEarned, }) {
-            const now = new Date();
+            const now = (0, adjustNowDate_1.adjustNowDate)();
             const weekStart = (0, weekDate_1.startOfWeek)(now);
             // 🔹 Obter informações do usuário (XP, streak e última atividade)
             const userInfo = yield prisma_1.default.user.findUniqueOrThrow({
@@ -78,7 +79,7 @@ const lessonService = {
             });
             // 🔹 Calcular streak (apenas se o usuário jogou no dia anterior)
             const lastActivity = userInfo.lastActivity;
-            const yesterday = new Date();
+            const yesterday = (0, adjustNowDate_1.adjustNowDate)();
             yesterday.setDate(yesterday.getDate() - 1);
             const isYesterday = lastActivity &&
                 yesterday.getFullYear() === lastActivity.getFullYear() &&
@@ -119,6 +120,7 @@ const lessonService = {
        (SELECT id FROM \`Topic\` WHERE \`moduleId\` = ${moduleId})) 
      AND ulp.\`completed\` = TRUE) AS \`completedLessons\`
 `;
+            console.log(result[0]);
             const { totalLessons, completedLessons } = result[0];
             // 🔹 Se todas as lições do módulo foram completadas, marcar o módulo como completo
             if (completedLessons === totalLessons) {

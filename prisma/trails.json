@@ -215,7 +215,7 @@
                     ]
                   },
                   {
-                    "text": "A tag <header> é usada para definir a __________ de uma página.",
+                    "text": "A tag <header> é usada para definir o __________ de uma página.",
                     "type": "COMPLETE_THE_SENTENCE",
                     "correctAnswer": "cabeçalho",
                     "answers": [

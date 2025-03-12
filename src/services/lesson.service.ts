@@ -2,6 +2,7 @@ import { Prisma, Question } from "@prisma/client";
 import prisma from "../lib/prisma";
 import { startOfWeek } from "../utils/weekDate";
 import { updateMissionsProgress } from "../utils/updateMission";
+import { adjustNowDate } from "../utils/adjustNowDate";
 
 type CompletedLessonData = {
   lessonId: string;
@@ -70,7 +71,7 @@ const lessonService = {
     completed,
     totalXpEarned,
   }: CompletedLessonData) {
-    const now = new Date();
+    const now = adjustNowDate();
     const weekStart = startOfWeek(now);
 
     // 🔹 Obter informações do usuário (XP, streak e última atividade)
@@ -81,7 +82,7 @@ const lessonService = {
 
     // 🔹 Calcular streak (apenas se o usuário jogou no dia anterior)
     const lastActivity = userInfo.lastActivity;
-    const yesterday = new Date();
+    const yesterday = adjustNowDate();
     yesterday.setDate(yesterday.getDate() - 1);
 
     const isYesterday =
@@ -132,6 +133,8 @@ const lessonService = {
        (SELECT id FROM \`Topic\` WHERE \`moduleId\` = ${moduleId})) 
      AND ulp.\`completed\` = TRUE) AS \`completedLessons\`
 `;
+
+    console.log(result[0]);
 
     const { totalLessons, completedLessons } = result[0];
 
