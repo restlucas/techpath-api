@@ -12,6 +12,6 @@ function startOfWeek(date) {
     utcDate.setUTCDate(utcDate.getUTCDate() - diff);
     utcDate.setUTCHours(0, 0, 0, 0); // Reseta para meia-noite (UTC)
     // Ajusta a data para o fuso horário desejado
-    utcDate.setHours(utcDate.getHours() + -3); // Ajuste do fuso horário (em horas)
+    utcDate.setHours(utcDate.getHours() + 3); // Ajuste do fuso horário (em horas)
     return utcDate; // Retorna a data ajustada para o fuso horário desejado
 }
