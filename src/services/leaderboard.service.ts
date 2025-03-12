@@ -4,6 +4,7 @@ import { startOfWeek } from "../utils/weekDate";
 const leaderboardService = {
   async getLeaderboard() {
     const weekStart = startOfWeek(new Date());
+    console.log("Week Start:", weekStart.toISOString());
 
     const leaderboard = await prisma.leaderboard.findMany({
       where: { weekStart },
