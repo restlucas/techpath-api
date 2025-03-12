@@ -8,7 +8,7 @@ const app_1 = __importDefault(require("./app"));
 require("./jobs/mission.cron");
 dotenv_1.default.config();
 const PORT = Number(process.env.PORT) || 3300;
-const HOST = "localhost";
+const HOST = process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost";
 const startServer = () => {
     try {
         app_1.default.listen(PORT, HOST, () => {
