@@ -18,6 +18,7 @@ const leaderboardService = {
     getLeaderboard() {
         return __awaiter(this, void 0, void 0, function* () {
             const weekStart = (0, weekDate_1.startOfWeek)(new Date());
+            console.log(weekStart);
             const leaderboard = yield prisma_1.default.leaderboard.findMany({
                 where: { weekStart },
                 orderBy: { xpEarned: "desc" },
