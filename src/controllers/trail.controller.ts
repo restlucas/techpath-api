@@ -6,23 +6,9 @@ export const listAll = async (
   req: Request,
   res: Response
 ): Promise<void | any> => {
-  try {
-    const trailsResponse = await trailService.getAll();
-    throw new Error("🔥 Teste de erro no Railway!");
+  const trailsResponse = await trailService.getAll();
 
-    console.error("🚀 API iniciou corretamente!");
-    process.stdout.write("✅ Log para stdout\n");
-    process.stderr.write("❌ Log para stderr\n");
-
-    responseHandler.success(
-      res,
-      "Trailx retrieved successfully",
-      trailsResponse
-    );
-  } catch (error) {
-    console.error("❌ Erro capturado:", error);
-    process.exit(1);
-  }
+  responseHandler.success(res, "Trails retrieved successfully", trailsResponse);
 };
 
 export const fetchTrail = async (
