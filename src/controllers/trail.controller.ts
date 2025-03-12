@@ -9,6 +9,7 @@ export const listAll = async (
   const trailsResponse = await trailService.getAll();
 
   console.log(trailsResponse);
+  throw new Error("🔥 Teste de erro no Railway!");
 
   responseHandler.success(res, "Trails retrieved successfully", trailsResponse);
 };
