@@ -120,23 +120,25 @@ const lessonService = {
 
     const moduleId = lesson.topic.moduleId;
 
-    // 🔹 Contar todas as lições do módulo e as concluídas pelo usuário
-    const result = await prisma.$queryRaw<
-      { totalLessons: number; completedLessons: number }[]
-    >`
-  SELECT
-    (SELECT COUNT(*) FROM \`Lesson\` l WHERE l.\`topicId\` IN 
-      (SELECT id FROM \`Topic\` WHERE \`moduleId\` = ${moduleId})) AS \`totalLessons\`,
-    (SELECT COUNT(*) FROM \`UserLessonProgress\` ulp 
-     WHERE ulp.\`userId\` = ${userId} 
-     AND ulp.\`lessonId\` IN (SELECT id FROM \`Lesson\` WHERE \`topicId\` IN 
-       (SELECT id FROM \`Topic\` WHERE \`moduleId\` = ${moduleId})) 
-     AND ulp.\`completed\` = TRUE) AS \`completedLessons\`
-`;
+    const totalLessons = await prisma.lesson.count({
+      where: {
+        topic: {
+          moduleId: moduleId,
+        },
+      },
+    });
 
-    console.log(result[0]);
-
-    const { totalLessons, completedLessons } = result[0];
+    const completedLessons = await prisma.userLessonProgress.count({
+      where: {
+        userId: userId,
+        lesson: {
+          topic: {
+            moduleId: moduleId,
+          },
+        },
+        completed: true,
+      },
+    });
 
     // 🔹 Se todas as lições do módulo foram completadas, marcar o módulo como completo
     if (completedLessons === totalLessons) {
