@@ -8,6 +8,8 @@ export const getLeaderboardRanking = async (
 ): Promise<void | any> => {
   const leaderboardResponse = await leaderboardService.getLeaderboard();
 
+  console.log(leaderboardResponse);
+
   responseHandler.success(
     res,
     "Leaderboard retrieved successfully",
